@@ -1,0 +1,104 @@
+\hypertarget{class_persistence}{}\section{Persistence Class Reference}
+\label{class_persistence}\index{Persistence@{Persistence}}
+
+
+A header for the persistence class which contains functions for session-\/to-\/session persistence fo data.  
+
+
+
+
+{\ttfamily \#include $<$Persistence.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{class_persistence_a38f1125e76c047670ad2387e1ac8dcd8}{encrypt\+Decrypt} (std\+::string to\+Encrypt)
+\begin{DoxyCompactList}\small\item\em The persistence class which contains functions for session-\/to-\/session persistence fo data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_persistence_a3da2a0f3eafae169d9f59f3b5343b9fa}\label{class_persistence_a3da2a0f3eafae169d9f59f3b5343b9fa}} 
+static bool {\bfseries store\+User} (std\+::string fname, std\+::string lname, std\+::string email, std\+::string password)
+\item 
+\mbox{\Hypertarget{class_persistence_aeb6a5d5bfff4f24267003ee362fef7f5}\label{class_persistence_aeb6a5d5bfff4f24267003ee362fef7f5}} 
+static std\+::string {\bfseries get\+First\+Name} (std\+::string email)
+\item 
+\mbox{\Hypertarget{class_persistence_a37273f97d212d8c53fc99b0434810ae7}\label{class_persistence_a37273f97d212d8c53fc99b0434810ae7}} 
+static std\+::string {\bfseries get\+Last\+Name} (std\+::string email)
+\item 
+\mbox{\Hypertarget{class_persistence_a5ecffbf68906e06c497cafc758f80364}\label{class_persistence_a5ecffbf68906e06c497cafc758f80364}} 
+static std\+::string {\bfseries get\+Password} (std\+::string email)
+\item 
+\mbox{\Hypertarget{class_persistence_afe33a1d14f14aabea3db95ea81e1c711}\label{class_persistence_afe33a1d14f14aabea3db95ea81e1c711}} 
+static void {\bfseries set\+First\+Name} (std\+::string email, std\+::string new\+First\+Name)
+\item 
+\mbox{\Hypertarget{class_persistence_a4b2cb9292beb76b51db257124fdce5b1}\label{class_persistence_a4b2cb9292beb76b51db257124fdce5b1}} 
+static void {\bfseries set\+Last\+Name} (std\+::string email, std\+::string new\+Last\+Name)
+\item 
+\mbox{\Hypertarget{class_persistence_af894cba0b6c470b215195acb058cee9b}\label{class_persistence_af894cba0b6c470b215195acb058cee9b}} 
+static void {\bfseries set\+Email} (std\+::string email, std\+::string new\+Email)
+\item 
+\mbox{\Hypertarget{class_persistence_a372566d9750e77752404f3d55f3a1a8c}\label{class_persistence_a372566d9750e77752404f3d55f3a1a8c}} 
+static void {\bfseries set\+Password} (std\+::string email, std\+::string new\+Password)
+\item 
+\mbox{\Hypertarget{class_persistence_ab8e62d0f6db44b7fa49742d2039f9bc5}\label{class_persistence_ab8e62d0f6db44b7fa49742d2039f9bc5}} 
+static bool {\bfseries delete\+User} (std\+::string email)
+\item 
+\mbox{\Hypertarget{class_persistence_a002c9cfa0ea98fde556881382db097e1}\label{class_persistence_a002c9cfa0ea98fde556881382db097e1}} 
+static int {\bfseries increment\+Light\+Num} (int light\+Num)
+\item 
+\mbox{\Hypertarget{class_persistence_a0af7db5cf8c82b7dd992e7825ab0571b}\label{class_persistence_a0af7db5cf8c82b7dd992e7825ab0571b}} 
+static bool {\bfseries make\+Light} (std\+::string bridge\+ID, int light\+ID)
+\item 
+\mbox{\Hypertarget{class_persistence_afd24e75354c541cd99d3d738954eae19}\label{class_persistence_afd24e75354c541cd99d3d738954eae19}} 
+static bool {\bfseries make\+Light} (std\+::string bridge\+ID)
+\item 
+\mbox{\Hypertarget{class_persistence_ab3bcb4f05d486879765662c41d3b697d}\label{class_persistence_ab3bcb4f05d486879765662c41d3b697d}} 
+static bool {\bfseries delete\+Light} (std\+::string bridge\+ID)
+\item 
+\mbox{\Hypertarget{class_persistence_ad568e32f1fb2410aa14275ed392197df}\label{class_persistence_ad568e32f1fb2410aa14275ed392197df}} 
+static bool {\bfseries store\+Data} (std\+::string bridge\+ID, int light\+ID, int day, int hour, int state)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A header for the persistence class which contains functions for session-\/to-\/session persistence fo data. 
+
+\begin{DoxyAuthor}{Author}
+Gurkiran Tatla 
+
+Jake Schindler 
+
+Justine Kim 
+
+Paul Salvatore 
+
+Timal Peramune 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_persistence_a38f1125e76c047670ad2387e1ac8dcd8}\label{class_persistence_a38f1125e76c047670ad2387e1ac8dcd8}} 
+\index{Persistence@{Persistence}!encrypt\+Decrypt@{encrypt\+Decrypt}}
+\index{encrypt\+Decrypt@{encrypt\+Decrypt}!Persistence@{Persistence}}
+\subsubsection{\texorpdfstring{encrypt\+Decrypt()}{encryptDecrypt()}}
+{\footnotesize\ttfamily std\+::string Persistence\+::encrypt\+Decrypt (\begin{DoxyParamCaption}\item[{std\+::string}]{to\+Encrypt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The persistence class which contains functions for session-\/to-\/session persistence fo data. 
+
+\begin{DoxyAuthor}{Author}
+Gurkiran Tatla 
+
+Jake Schindler 
+
+Justine Kim 
+
+Paul Salvatore 
+
+Timal Peramune 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Persistence.\+h\item 
+Persistence.\+cpp\end{DoxyCompactItemize}

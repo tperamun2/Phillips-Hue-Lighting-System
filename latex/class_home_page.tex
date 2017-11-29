@@ -1,0 +1,986 @@
+\hypertarget{class_home_page}{}\section{Home\+Page Class Reference}
+\label{class_home_page}\index{Home\+Page@{Home\+Page}}
+Inheritance diagram for Home\+Page\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_home_page}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_home_page_ae0e5d76697b6796ee71c77555d330eea}{Home\+Page} (const Wt\+::\+W\+Environment \&env)
+\begin{DoxyCompactList}\small\item\em the homepage class represents the mission control for the hue lights system \end{DoxyCompactList}\item 
+int \hyperlink{class_home_page_a82c2d28ad829b6c8527cec5cefae0104}{get\+Num\+Lights} ()
+\begin{DoxyCompactList}\small\item\em gets the number of the lights and return it takes no parameters returns the size of lights (how many there are) \end{DoxyCompactList}\item 
+int \hyperlink{class_home_page_a04cc4e1d2ae6d6e1a36c407fa6db8bb4}{get\+Num\+Groups} ()
+\begin{DoxyCompactList}\small\item\em returns the number of group \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_adbf50db3ccfa220970c05422495f308a}{change\+Light\+Name} (std\+::string, int)
+\begin{DoxyCompactList}\small\item\em takes in the new name String and an integer i ( place in array that light is in) and it changes the light name to that. It had no return value. \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_a5bae10f45d04af24bffdc168e87638a0}{change\+Light\+Hue} (std\+::string, int)
+\begin{DoxyCompactList}\small\item\em takes in string cur\+Val and int i (place in array that light is in) and it changes the hue. It has no return value. \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_a748389a4b1b13e026e6d269c4df1f8d5}{change\+Light\+Brightness} (std\+::string, int)
+\begin{DoxyCompactList}\small\item\em takes in string bri and int i (place in array that light is in) and it changes the brightness. It has no return value. \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_a515f5cac6f72edd5303f2e1131216640}{change\+Group\+Name} (std\+::string, int)
+\begin{DoxyCompactList}\small\item\em changes the name of an existing group \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_home_page_a46232e6266b10bf35752fc4b2665e668}\label{class_home_page_a46232e6266b10bf35752fc4b2665e668}} 
+void {\bfseries change\+Group\+Hue} (std\+::string, int)
+\item 
+\mbox{\Hypertarget{class_home_page_a2f340e5557757b8040b5ba26b1141442}\label{class_home_page_a2f340e5557757b8040b5ba26b1141442}} 
+void {\bfseries change\+Group\+Brightness} (std\+::string, int)
+\item 
+void \hyperlink{class_home_page_ab85e660ef34d71e7d17872937ee01d7f}{add\+Light\+To\+Group} (std\+::string str)
+\begin{DoxyCompactList}\small\item\em adds a light to an existing group \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_ace0313d818ae7561f7707c6fa74f630b}{remove\+Light\+From\+Group} (std\+::string str)
+\begin{DoxyCompactList}\small\item\em removes a light to an existing group \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_a0b2d780662f8946abb173e1f3fe136d7}{store\+Light\+Data} ()
+\begin{DoxyCompactList}\small\item\em method for creating a thread to store light data \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_ad81aea92b5f0273686d3b25d22ed6d77}{add\+Group} ()
+\begin{DoxyCompactList}\small\item\em adds a specified group based on a text input field \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_a019ab5ef1587a197837badfc32725af8}{remove\+Group} ()
+\begin{DoxyCompactList}\small\item\em deletes a specified group based on a text input field \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_home_page_a85bfcacf19ee6acb3186550e5498d119}\label{class_home_page_a85bfcacf19ee6acb3186550e5498d119}} 
+\hyperlink{class_bridge}{Bridge} $\ast$ {\bfseries get\+Current\+Bridge} ()
+\item 
+\hyperlink{class_light}{Light} $\ast$ \hyperlink{class_home_page_ac9c95668c61d02a9ed50675402296d66}{get\+Light\+With\+ID} (std\+::string id)
+\begin{DoxyCompactList}\small\item\em get a light with a specific id \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_home_page_a0b1c585653227e946ba3fb0e71a4a7af}{create\+User} ()
+\begin{DoxyCompactList}\small\item\em method to create a user, creates a textfile with user\textquotesingle{}s info \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_af34743abfb066e71ef7b1d2f507415eb}{validate\+Login} ()
+\begin{DoxyCompactList}\small\item\em method for validating user\textquotesingle{}s login credentials, sets the currentuser to and object of this user if credentials are correct \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_a4dd93ce31ced15fd70992fe6ef67d28b}{update} ()
+\begin{DoxyCompactList}\small\item\em method for updating a user\textquotesingle{}s personal and account info \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_aa8de2797f59b77f46f0eaadaec8a63ed}{update\+Password} ()
+\begin{DoxyCompactList}\small\item\em method for updating a user\textquotesingle{}s password \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_home_page_ad75f2a24375568f2c231ce95ced4f1e8}\label{class_home_page_ad75f2a24375568f2c231ce95ced4f1e8}} 
+void \hyperlink{class_home_page_ad75f2a24375568f2c231ce95ced4f1e8}{load\+Bridge} ()
+\begin{DoxyCompactList}\small\item\em a function that is controlling the UI of the homepage allowing for all Hue light functionality \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_a7ca1f03912ee0763d6fd25e1c4b21eff}{handle\+Http\+Response\+Lights} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em takes an error code err and a message response as parameters and handles the Http Response Lights it. It does not have a return value. \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_a35ecb731b87a0b752be365d42dfa8bf7}{handle\+Http\+Response\+Prediction} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em response from api call to creating a specific scheduled event \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_a7f37c86187bf9bee98eb5f905422eb9c}{handle\+Http\+Response\+Prediction\+Off} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em response from api call to delete a specific scheduled event \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_a84f498dee2335d7f6d11e89105cb82bc}{handle\+Http\+Response\+Get\+Schedule} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em handles the http response after getting all of the current schedule \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_a9fd215402b2cc96281c39454e9c70d69}{handle\+Http\+Response\+Delete\+Schedule} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em handles the http response after deleting a specific schedule \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_a3ece53358d71e7a893cf4284dbcff175}{handle\+Lights\+In\+Groups} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response, int group\+\_\+index)
+\begin{DoxyCompactList}\small\item\em adds all lights to their groups \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_home_page_a0a9851d03cb1adcfe9a28f2546cbd765}\label{class_home_page_a0a9851d03cb1adcfe9a28f2546cbd765}} 
+void {\bfseries handle\+Http\+Response\+Groups} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\item 
+void \hyperlink{class_home_page_a5a1923f90a2ac6367869f9423e9a3559}{handle\+Http\+Response\+Add\+Bridge} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em method for handling the adding of a bridge \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_a3823da7245637b5b16eec173660661fc}{toggle\+Login} ()
+\begin{DoxyCompactList}\small\item\em method for moving between pages \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_home_page_a25916e36819153779ac8194b2c76c725}\label{class_home_page_a25916e36819153779ac8194b2c76c725}} 
+void {\bfseries toggle\+Settings} ()
+\item 
+\mbox{\Hypertarget{class_home_page_a4121a0ab427705dba5b929d4331f8a9c}\label{class_home_page_a4121a0ab427705dba5b929d4331f8a9c}} 
+void {\bfseries toggle\+Home\+Page} ()
+\item 
+void \hyperlink{class_home_page_a0231c983e866ff4f574d9f26cac7c944}{update\+Bridge\+Text} ()
+\begin{DoxyCompactList}\small\item\em method for updating current bridges connected with a user \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_aca01e2e44b307cb44aa0f23ab5d5b25b}{handle\+Create\+Bridge} ()
+\begin{DoxyCompactList}\small\item\em method for handling the creation of a bridge \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_a8e33de7e775f85f91d7792eb315b8015}{handle\+Prediction} ()
+\begin{DoxyCompactList}\small\item\em creates predicted events using the \hyperlink{class_predict}{Predict} class and logistic regression \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_af6d8f0979312ab9971c4c696992f5096}{handle\+Prediction\+Off} ()
+\begin{DoxyCompactList}\small\item\em deletes all events scheduled through predictive mode \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_af449cf14bc9d0196e0cb4a4c352b3919}{handle\+Schedule\+Delete} ()
+\begin{DoxyCompactList}\small\item\em a method handling button clicks to delete a particular schedule \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_a1ee49731ce9e0ae4ce8525cd86c800f8}{get\+And\+Display\+Schedule} ()
+\begin{DoxyCompactList}\small\item\em makes an api call to get all of the current schedule and prints it to the UI \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_a90f36d7359af291e1becf350c7805768}{handle\+Schedule\+Create\+Light} ()
+\begin{DoxyCompactList}\small\item\em calls the handle\+Schedule\+Create for only a light \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_a2e1ef1f628cf82023a688fabfc272bff}{handle\+Schedule\+Create\+Group} ()
+\begin{DoxyCompactList}\small\item\em calls the handle\+Schedule\+Create for an entire group \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_ad43b3bb765e485771e9116edbcec0b2b}{handle\+Schedule\+Create} (int group)
+\begin{DoxyCompactList}\small\item\em makes an A\+PI to schedule a change dependent on several text fields \end{DoxyCompactList}\item 
+void \hyperlink{class_home_page_a8c56067a3cd4dc321572a034d3135ab9}{toggle\+Thread} ()
+\begin{DoxyCompactList}\small\item\em turns on/off recording of light states for predictive mode \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_home_page_ad43f4366a008051d3e1776092b1507fe}\label{class_home_page_ad43f4366a008051d3e1776092b1507fe}} 
+std\+::string {\bfseries build\+Current\+Schedule}
+\item 
+\mbox{\Hypertarget{class_home_page_a8d11f80cbf24a601b1f1b0c553f60f27}\label{class_home_page_a8d11f80cbf24a601b1f1b0c553f60f27}} 
+std\+::string {\bfseries delete\+Message}
+\item 
+\mbox{\Hypertarget{class_home_page_a3542f74573ce071ee708cdd64a09cbb4}\label{class_home_page_a3542f74573ce071ee708cdd64a09cbb4}} 
+std\+::vector$<$ \hyperlink{class_light_group}{Light\+Group} $\ast$ $>$ {\bfseries groups}
+\item 
+\mbox{\Hypertarget{class_home_page_ade2a3d058ec4513037bd3019637b4244}\label{class_home_page_ade2a3d058ec4513037bd3019637b4244}} 
+std\+::vector$<$ Wt\+::\+W\+Slider $\ast$ $>$ {\bfseries group\+Hue\+Sliders}
+\item 
+\mbox{\Hypertarget{class_home_page_ab8b2900ac658e931740f3cb88adbf3f6}\label{class_home_page_ab8b2900ac658e931740f3cb88adbf3f6}} 
+std\+::vector$<$ Wt\+::\+W\+Slider $\ast$ $>$ {\bfseries group\+Bri\+Sliders}
+\item 
+\mbox{\Hypertarget{class_home_page_a3ba52a08e34248ec5c27b09c99d152f1}\label{class_home_page_a3ba52a08e34248ec5c27b09c99d152f1}} 
+std\+::vector$<$ Wt\+::\+W\+Line\+Edit $\ast$ $>$ {\bfseries group\+Edits}
+\item 
+\mbox{\Hypertarget{class_home_page_a83b6a751af68810ab593a87bde1df58e}\label{class_home_page_a83b6a751af68810ab593a87bde1df58e}} 
+std\+::vector$<$ \hyperlink{class_light}{Light} $\ast$ $>$ {\bfseries lights}
+\item 
+\mbox{\Hypertarget{class_home_page_ae86e2fca3964ce3e323ad73c2976882c}\label{class_home_page_ae86e2fca3964ce3e323ad73c2976882c}} 
+std\+::string {\bfseries name}
+\item 
+\mbox{\Hypertarget{class_home_page_a49058000209f6fcf1c3dae010314ab31}\label{class_home_page_a49058000209f6fcf1c3dae010314ab31}} 
+std\+::vector$<$ Wt\+::\+W\+Line\+Edit $\ast$ $>$ {\bfseries edits}
+\item 
+\mbox{\Hypertarget{class_home_page_aff6c1a9092c37bdae536761ee1ab6305}\label{class_home_page_aff6c1a9092c37bdae536761ee1ab6305}} 
+std\+::vector$<$ Wt\+::\+W\+Slider $\ast$ $>$ {\bfseries hue\+Sliders}
+\item 
+\mbox{\Hypertarget{class_home_page_a806a9da2d7a0aecb97e044ae400612c0}\label{class_home_page_a806a9da2d7a0aecb97e044ae400612c0}} 
+std\+::vector$<$ Wt\+::\+W\+Slider $\ast$ $>$ {\bfseries brightness\+Sliders}
+\item 
+\mbox{\Hypertarget{class_home_page_a7d0dd7b2b4bde6726d93d04b88eba8ec}\label{class_home_page_a7d0dd7b2b4bde6726d93d04b88eba8ec}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries add\+Light\+Edit}
+\item 
+\mbox{\Hypertarget{class_home_page_a1992b94e871aa02620cd3f3344742978}\label{class_home_page_a1992b94e871aa02620cd3f3344742978}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries remove\+Light\+Edit}
+\item 
+\mbox{\Hypertarget{class_home_page_aa923822ce73ff50a6ac80e75ecc34558}\label{class_home_page_aa923822ce73ff50a6ac80e75ecc34558}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries remove\+Group\+Edit}
+\item 
+\mbox{\Hypertarget{class_home_page_af0975aebdc40be8d3bb10a4cc0f330b2}\label{class_home_page_af0975aebdc40be8d3bb10a4cc0f330b2}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries delete\+Schedule\+Id}
+\item 
+\mbox{\Hypertarget{class_home_page_a863788b73e47f8568bcf34dce9b3a254}\label{class_home_page_a863788b73e47f8568bcf34dce9b3a254}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries create\+Schedule\+Id}
+\item 
+\mbox{\Hypertarget{class_home_page_a82efb549e93697236e4b78e7b3e9ee40}\label{class_home_page_a82efb549e93697236e4b78e7b3e9ee40}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries schedule\+Year}
+\item 
+\mbox{\Hypertarget{class_home_page_aba574ecf94395d37f557d721e1c76413}\label{class_home_page_aba574ecf94395d37f557d721e1c76413}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries schedule\+Month}
+\item 
+\mbox{\Hypertarget{class_home_page_a320665647585bf13dc9cf9a5027f3833}\label{class_home_page_a320665647585bf13dc9cf9a5027f3833}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries schedule\+Day}
+\item 
+\mbox{\Hypertarget{class_home_page_a88fc775a2870d436b3ff0c1e08cb7c47}\label{class_home_page_a88fc775a2870d436b3ff0c1e08cb7c47}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries schedule\+Hour}
+\item 
+\mbox{\Hypertarget{class_home_page_a7707bae4d9c88faae9180c635890a6a8}\label{class_home_page_a7707bae4d9c88faae9180c635890a6a8}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries schedule\+Min}
+\item 
+\mbox{\Hypertarget{class_home_page_a71cbd9da103c3f87e6a6ae9d4fd10205}\label{class_home_page_a71cbd9da103c3f87e6a6ae9d4fd10205}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries schedule\+On}
+\item 
+\mbox{\Hypertarget{class_home_page_ac1edd4f5d53f3ed929c1ee4df2948a7d}\label{class_home_page_ac1edd4f5d53f3ed929c1ee4df2948a7d}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries schedule\+Transition}
+\item 
+\mbox{\Hypertarget{class_home_page_a48cd37e97a4bda9187f623c4e87be295}\label{class_home_page_a48cd37e97a4bda9187f623c4e87be295}} 
+Wt\+::\+W\+Slider $\ast$ {\bfseries schedule\+Hue}
+\item 
+\mbox{\Hypertarget{class_home_page_a66d374ae4e95029b1b5f8a1fe46722f6}\label{class_home_page_a66d374ae4e95029b1b5f8a1fe46722f6}} 
+Wt\+::\+W\+Slider $\ast$ {\bfseries schedule\+Brightness}
+\item 
+\mbox{\Hypertarget{class_home_page_a7457d428fcd698d60f72c95782b39faf}\label{class_home_page_a7457d428fcd698d60f72c95782b39faf}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries bridge\+Name}
+\item 
+\mbox{\Hypertarget{class_home_page_ab04d99877c163415071b9f3a0271513e}\label{class_home_page_ab04d99877c163415071b9f3a0271513e}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries bridge\+Place}
+\item 
+\mbox{\Hypertarget{class_home_page_a45fd120ec99938f2bfbce184a9ca7286}\label{class_home_page_a45fd120ec99938f2bfbce184a9ca7286}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries bridge\+I\+P\+Address}
+\item 
+\mbox{\Hypertarget{class_home_page_a4969076e3c84a43fd6619b8f979460e8}\label{class_home_page_a4969076e3c84a43fd6619b8f979460e8}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries bridge\+Port}
+\item 
+\mbox{\Hypertarget{class_home_page_aaac28b0dd276a70dc3276d41ffa3cab7}\label{class_home_page_aaac28b0dd276a70dc3276d41ffa3cab7}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries bridge\+Select}
+\item 
+\mbox{\Hypertarget{class_home_page_a39443293a3c81cd773edb854adff1f06}\label{class_home_page_a39443293a3c81cd773edb854adff1f06}} 
+Wt\+::\+W\+Text $\ast$ {\bfseries schedule\+Text}
+\item 
+\mbox{\Hypertarget{class_home_page_a374f318fc4813cb846eafb26215e87fa}\label{class_home_page_a374f318fc4813cb846eafb26215e87fa}} 
+Wt\+::\+W\+Text $\ast$ {\bfseries schedule\+Error\+Text}
+\item 
+\mbox{\Hypertarget{class_home_page_a5e8e32e17b38b81890ed3d7e1bc54b9f}\label{class_home_page_a5e8e32e17b38b81890ed3d7e1bc54b9f}} 
+Wt\+::\+W\+Text $\ast$ {\bfseries prediction\+Text}
+\item 
+\mbox{\Hypertarget{class_home_page_ac6513658bfdf9e880f413042e1301019}\label{class_home_page_ac6513658bfdf9e880f413042e1301019}} 
+Wt\+::\+W\+Push\+Button $\ast$ {\bfseries prediction\+Recording}
+\item 
+\mbox{\Hypertarget{class_home_page_ad2dd5ad7baa20ba3af98ea202d08cdbd}\label{class_home_page_ad2dd5ad7baa20ba3af98ea202d08cdbd}} 
+pthread\+\_\+t {\bfseries worker\+\_\+thread}
+\item 
+\mbox{\Hypertarget{class_home_page_a8840400b02f213102b90da8dd216532d}\label{class_home_page_a8840400b02f213102b90da8dd216532d}} 
+bool {\bfseries thread\+Running}
+\item 
+\mbox{\Hypertarget{class_home_page_a80e936d1c0377a7422784b8c2ff3ecac}\label{class_home_page_a80e936d1c0377a7422784b8c2ff3ecac}} 
+Wt\+::\+W\+Container\+Widget $\ast$ {\bfseries container\+Login}
+\item 
+\mbox{\Hypertarget{class_home_page_a3b17c835146a6fdc739e0d288bbc3e49}\label{class_home_page_a3b17c835146a6fdc739e0d288bbc3e49}} 
+Wt\+::\+W\+Container\+Widget $\ast$ {\bfseries container\+Settings}
+\item 
+\mbox{\Hypertarget{class_home_page_a4f7587b679365a61fba6deddc7fab620}\label{class_home_page_a4f7587b679365a61fba6deddc7fab620}} 
+Wt\+::\+W\+Container\+Widget $\ast$ {\bfseries container\+Home\+Page}
+\item 
+\mbox{\Hypertarget{class_home_page_a440cbe8e6ee11c653b8fb5e6c5fed0d4}\label{class_home_page_a440cbe8e6ee11c653b8fb5e6c5fed0d4}} 
+Wt\+::\+W\+Push\+Button $\ast$ {\bfseries login\+Container\+Btn}
+\item 
+\mbox{\Hypertarget{class_home_page_a134dd4e29d4eb5b98a3b2c74d02bbc3c}\label{class_home_page_a134dd4e29d4eb5b98a3b2c74d02bbc3c}} 
+Wt\+::\+W\+Push\+Button $\ast$ {\bfseries Settings\+Container\+Btn}
+\item 
+\mbox{\Hypertarget{class_home_page_a733ecbecb3ad83deec5cd6f4257ce0a0}\label{class_home_page_a733ecbecb3ad83deec5cd6f4257ce0a0}} 
+Wt\+::\+W\+Push\+Button $\ast$ {\bfseries Home\+Page\+Container\+Btn}
+\item 
+\mbox{\Hypertarget{class_home_page_a4539d511820e19ecde37af6da7fc1961}\label{class_home_page_a4539d511820e19ecde37af6da7fc1961}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries email\+Edit\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_ae8a1d9bcaa453a546d2cd9b1285c7de7}\label{class_home_page_ae8a1d9bcaa453a546d2cd9b1285c7de7}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries first\+Name\+Edit\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_abcc21d00e534bf3197eee5d1ab25e8ef}\label{class_home_page_abcc21d00e534bf3197eee5d1ab25e8ef}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries last\+Name\+Edit\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_a2af61fdced50fe8fd5c739d6408dee9f}\label{class_home_page_a2af61fdced50fe8fd5c739d6408dee9f}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries pass\+New\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_adf3b007a1328192b19ec8d9c6dffe92d}\label{class_home_page_adf3b007a1328192b19ec8d9c6dffe92d}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries pass\+Old\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_af249dc7c73669768fdbd68c8f3ce6adc}\label{class_home_page_af249dc7c73669768fdbd68c8f3ce6adc}} 
+Wt\+::\+W\+Text $\ast$ {\bfseries change\+Output\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_ad4a275cc1f6cd29431ed6a51ab1ade8e}\label{class_home_page_ad4a275cc1f6cd29431ed6a51ab1ade8e}} 
+Wt\+::\+W\+Text $\ast$ {\bfseries change\+Output\+Pass\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_a55ecc0d8d1decfadf430b379dea493ea}\label{class_home_page_a55ecc0d8d1decfadf430b379dea493ea}} 
+Wt\+::\+W\+Text $\ast$ {\bfseries header\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_accbb8bdab5a92fcdfb49c4f1b78f7d47}\label{class_home_page_accbb8bdab5a92fcdfb49c4f1b78f7d47}} 
+Wt\+::\+W\+Text $\ast$ {\bfseries login\+Text\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_ae9c814217e8aa38aeb04f4225bba4905}\label{class_home_page_ae9c814217e8aa38aeb04f4225bba4905}} 
+Wt\+::\+W\+Text $\ast$ {\bfseries email\+Login\+Text\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_a62fb2f3ce19da1db8d23b106fbdf00e2}\label{class_home_page_a62fb2f3ce19da1db8d23b106fbdf00e2}} 
+Wt\+::\+W\+Text $\ast$ {\bfseries password\+Login\+Text\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_ade8efdaeb4931e508ff566eeeaf1d579}\label{class_home_page_ade8efdaeb4931e508ff566eeeaf1d579}} 
+Wt\+::\+W\+Text $\ast$ {\bfseries create\+Text\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_adbce88a58a3637315fa91f80e5db9832}\label{class_home_page_adbce88a58a3637315fa91f80e5db9832}} 
+Wt\+::\+W\+Text $\ast$ {\bfseries firstname\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_a06863d54dbc0e8e59568de8e48aa16e4}\label{class_home_page_a06863d54dbc0e8e59568de8e48aa16e4}} 
+Wt\+::\+W\+Text $\ast$ {\bfseries lastname\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_abb09080e7fa8d8e67c3f7b32b36913c6}\label{class_home_page_abb09080e7fa8d8e67c3f7b32b36913c6}} 
+Wt\+::\+W\+Text $\ast$ {\bfseries create\+Update\+Text\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_a4b64b141092c4301da9aefcec1972901}\label{class_home_page_a4b64b141092c4301da9aefcec1972901}} 
+Wt\+::\+W\+Text $\ast$ {\bfseries bridge\+Output\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_a1a83db80bc2079a3c136b921d631d092}\label{class_home_page_a1a83db80bc2079a3c136b921d631d092}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries email\+Login\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_aeb262c5638972913967baf59af4ac7fc}\label{class_home_page_aeb262c5638972913967baf59af4ac7fc}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries password\+Login\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_a88e1c17d22e0308b1600cbd08a6d4755}\label{class_home_page_a88e1c17d22e0308b1600cbd08a6d4755}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries email\+Create\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_a22bd565ef1beace353181e867d21b427}\label{class_home_page_a22bd565ef1beace353181e867d21b427}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries password\+Create\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_af28999a99f5ae23b313c0a97cd6f69a2}\label{class_home_page_af28999a99f5ae23b313c0a97cd6f69a2}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries first\+Create\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_a219cdf3b4fa7939d9e513d50e413e1d9}\label{class_home_page_a219cdf3b4fa7939d9e513d50e413e1d9}} 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries last\+Create\+\_\+}
+\item 
+\mbox{\Hypertarget{class_home_page_a34949a74a5624d39794e9a36fdc3e3a9}\label{class_home_page_a34949a74a5624d39794e9a36fdc3e3a9}} 
+Wt\+::\+W\+Push\+Button $\ast$ {\bfseries login\+Btn}
+\item 
+\mbox{\Hypertarget{class_home_page_a44aea27c2144dc79e5cd874f1535e3c2}\label{class_home_page_a44aea27c2144dc79e5cd874f1535e3c2}} 
+Wt\+::\+W\+Push\+Button $\ast$ {\bfseries create\+Btn}
+\item 
+\mbox{\Hypertarget{class_home_page_a2906979431ad4c1349096e094388568a}\label{class_home_page_a2906979431ad4c1349096e094388568a}} 
+\hyperlink{class_user}{User} $\ast$ {\bfseries user\+Temp}
+\item 
+\mbox{\Hypertarget{class_home_page_a4f3a9aca2e0316a4a0a7f392677faadb}\label{class_home_page_a4f3a9aca2e0316a4a0a7f392677faadb}} 
+\hyperlink{class_user}{User} $\ast$ {\bfseries current\+User}
+\item 
+\mbox{\Hypertarget{class_home_page_a3bfc1c6ab14d69799d3d39639697726d}\label{class_home_page_a3bfc1c6ab14d69799d3d39639697726d}} 
+bool {\bfseries bridge\+Flag}
+\item 
+\mbox{\Hypertarget{class_home_page_ab045455fa1d609cdafdc4cc3cad23062}\label{class_home_page_ab045455fa1d609cdafdc4cc3cad23062}} 
+Wt\+::\+W\+Text $\ast$ {\bfseries bridge\+Status}
+\item 
+\mbox{\Hypertarget{class_home_page_ae081130ece7aa9b6bba0cc72f793745f}\label{class_home_page_ae081130ece7aa9b6bba0cc72f793745f}} 
+std\+::vector$<$ \hyperlink{class_bridge}{Bridge} $\ast$ $>$ {\bfseries bridges}
+\item 
+\mbox{\Hypertarget{class_home_page_ab5d1ffbc1733044cfb176be7882e24f9}\label{class_home_page_ab5d1ffbc1733044cfb176be7882e24f9}} 
+\hyperlink{class_bridge}{Bridge} $\ast$ {\bfseries current\+Bridge}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_home_page_ae0e5d76697b6796ee71c77555d330eea}\label{class_home_page_ae0e5d76697b6796ee71c77555d330eea}} 
+\index{Home\+Page@{Home\+Page}!Home\+Page@{Home\+Page}}
+\index{Home\+Page@{Home\+Page}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{Home\+Page()}{HomePage()}}
+{\footnotesize\ttfamily Home\+Page\+::\+Home\+Page (\begin{DoxyParamCaption}\item[{const Wt\+::\+W\+Environment \&}]{env }\end{DoxyParamCaption})}
+
+
+
+the homepage class represents the mission control for the hue lights system 
+
+\begin{DoxyAuthor}{Author}
+Gurkiran Tatla 
+
+Jake Schindler 
+
+Justine Kim 
+
+Paul Salvatore 
+
+Timal Peramune \hyperlink{class_home_page}{Home\+Page} constructor for controlling bridges and user settings
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em env} & an envirnmental variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_home_page_ad81aea92b5f0273686d3b25d22ed6d77}\label{class_home_page_ad81aea92b5f0273686d3b25d22ed6d77}} 
+\index{Home\+Page@{Home\+Page}!add\+Group@{add\+Group}}
+\index{add\+Group@{add\+Group}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{add\+Group()}{addGroup()}}
+{\footnotesize\ttfamily void Home\+Page\+::add\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+adds a specified group based on a text input field 
+
+add\+Group  none \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_ab85e660ef34d71e7d17872937ee01d7f}\label{class_home_page_ab85e660ef34d71e7d17872937ee01d7f}} 
+\index{Home\+Page@{Home\+Page}!add\+Light\+To\+Group@{add\+Light\+To\+Group}}
+\index{add\+Light\+To\+Group@{add\+Light\+To\+Group}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{add\+Light\+To\+Group()}{addLightToGroup()}}
+{\footnotesize\ttfamily void Home\+Page\+::add\+Light\+To\+Group (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
+
+
+
+adds a light to an existing group 
+
+add\+Light\+To\+Group 
+\begin{DoxyParams}{Parameters}
+{\em str} & the name of the light to add to the group \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a515f5cac6f72edd5303f2e1131216640}\label{class_home_page_a515f5cac6f72edd5303f2e1131216640}} 
+\index{Home\+Page@{Home\+Page}!change\+Group\+Name@{change\+Group\+Name}}
+\index{change\+Group\+Name@{change\+Group\+Name}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{change\+Group\+Name()}{changeGroupName()}}
+{\footnotesize\ttfamily void Home\+Page\+::change\+Group\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+changes the name of an existing group 
+
+change\+Group\+Name 
+\begin{DoxyParams}{Parameters}
+{\em name} & the name we want to change the group to \\
+\hline
+{\em i} & the index of the group we are renaming \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_home_page_a748389a4b1b13e026e6d269c4df1f8d5}\label{class_home_page_a748389a4b1b13e026e6d269c4df1f8d5}} 
+\index{Home\+Page@{Home\+Page}!change\+Light\+Brightness@{change\+Light\+Brightness}}
+\index{change\+Light\+Brightness@{change\+Light\+Brightness}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{change\+Light\+Brightness()}{changeLightBrightness()}}
+{\footnotesize\ttfamily void Home\+Page\+::change\+Light\+Brightness (\begin{DoxyParamCaption}\item[{std\+::string}]{bri,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+takes in string bri and int i (place in array that light is in) and it changes the brightness. It has no return value. 
+
+change\+Light\+Brightness 
+\begin{DoxyParams}{Parameters}
+{\em bri} & string representing brightness \\
+\hline
+{\em i} & int representing place in array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a5bae10f45d04af24bffdc168e87638a0}\label{class_home_page_a5bae10f45d04af24bffdc168e87638a0}} 
+\index{Home\+Page@{Home\+Page}!change\+Light\+Hue@{change\+Light\+Hue}}
+\index{change\+Light\+Hue@{change\+Light\+Hue}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{change\+Light\+Hue()}{changeLightHue()}}
+{\footnotesize\ttfamily void Home\+Page\+::change\+Light\+Hue (\begin{DoxyParamCaption}\item[{std\+::string}]{cur\+Val,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+takes in string cur\+Val and int i (place in array that light is in) and it changes the hue. It has no return value. 
+
+change\+Light\+Hue 
+\begin{DoxyParams}{Parameters}
+{\em cur\+Val} & string representing hue \\
+\hline
+{\em i} & int representing place in array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_adbf50db3ccfa220970c05422495f308a}\label{class_home_page_adbf50db3ccfa220970c05422495f308a}} 
+\index{Home\+Page@{Home\+Page}!change\+Light\+Name@{change\+Light\+Name}}
+\index{change\+Light\+Name@{change\+Light\+Name}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{change\+Light\+Name()}{changeLightName()}}
+{\footnotesize\ttfamily void Home\+Page\+::change\+Light\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+takes in the new name String and an integer i ( place in array that light is in) and it changes the light name to that. It had no return value. 
+
+change\+Light\+Name 
+\begin{DoxyParams}{Parameters}
+{\em name} & string for the new light name \\
+\hline
+{\em i} & int representing place in array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a0b1c585653227e946ba3fb0e71a4a7af}\label{class_home_page_a0b1c585653227e946ba3fb0e71a4a7af}} 
+\index{Home\+Page@{Home\+Page}!create\+User@{create\+User}}
+\index{create\+User@{create\+User}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{create\+User()}{createUser()}}
+{\footnotesize\ttfamily void Home\+Page\+::create\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+method to create a user, creates a textfile with user\textquotesingle{}s info 
+
+\hyperlink{class_home_page_a0231c983e866ff4f574d9f26cac7c944}{Home\+Page\+::update\+Bridge\+Text} 
+\begin{DoxyParams}{Parameters}
+{\em args} & none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$\+: returns void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a1ee49731ce9e0ae4ce8525cd86c800f8}\label{class_home_page_a1ee49731ce9e0ae4ce8525cd86c800f8}} 
+\index{Home\+Page@{Home\+Page}!get\+And\+Display\+Schedule@{get\+And\+Display\+Schedule}}
+\index{get\+And\+Display\+Schedule@{get\+And\+Display\+Schedule}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{get\+And\+Display\+Schedule()}{getAndDisplaySchedule()}}
+{\footnotesize\ttfamily void Home\+Page\+::get\+And\+Display\+Schedule (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+makes an api call to get all of the current schedule and prints it to the UI 
+
+get\+And\+Display\+Schedule 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_ac9c95668c61d02a9ed50675402296d66}\label{class_home_page_ac9c95668c61d02a9ed50675402296d66}} 
+\index{Home\+Page@{Home\+Page}!get\+Light\+With\+ID@{get\+Light\+With\+ID}}
+\index{get\+Light\+With\+ID@{get\+Light\+With\+ID}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{get\+Light\+With\+I\+D()}{getLightWithID()}}
+{\footnotesize\ttfamily \hyperlink{class_light}{Light} $\ast$ Home\+Page\+::get\+Light\+With\+ID (\begin{DoxyParamCaption}\item[{std\+::string}]{id }\end{DoxyParamCaption})}
+
+
+
+get a light with a specific id 
+
+get\+Light\+With\+ID 
+\begin{DoxyParams}{Parameters}
+{\em id} & a string representing the id of a light to get \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null if the light does not exist, otherwise returns the light pointer object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a04cc4e1d2ae6d6e1a36c407fa6db8bb4}\label{class_home_page_a04cc4e1d2ae6d6e1a36c407fa6db8bb4}} 
+\index{Home\+Page@{Home\+Page}!get\+Num\+Groups@{get\+Num\+Groups}}
+\index{get\+Num\+Groups@{get\+Num\+Groups}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{get\+Num\+Groups()}{getNumGroups()}}
+{\footnotesize\ttfamily int Home\+Page\+::get\+Num\+Groups (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the number of group 
+
+get\+Num\+Groups 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an int representing the number of groups 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a82c2d28ad829b6c8527cec5cefae0104}\label{class_home_page_a82c2d28ad829b6c8527cec5cefae0104}} 
+\index{Home\+Page@{Home\+Page}!get\+Num\+Lights@{get\+Num\+Lights}}
+\index{get\+Num\+Lights@{get\+Num\+Lights}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{get\+Num\+Lights()}{getNumLights()}}
+{\footnotesize\ttfamily int Home\+Page\+::get\+Num\+Lights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the number of the lights and return it takes no parameters returns the size of lights (how many there are) 
+
+get\+Num\+Lights 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an int representing the number of lights 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_aca01e2e44b307cb44aa0f23ab5d5b25b}\label{class_home_page_aca01e2e44b307cb44aa0f23ab5d5b25b}} 
+\index{Home\+Page@{Home\+Page}!handle\+Create\+Bridge@{handle\+Create\+Bridge}}
+\index{handle\+Create\+Bridge@{handle\+Create\+Bridge}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{handle\+Create\+Bridge()}{handleCreateBridge()}}
+{\footnotesize\ttfamily void Home\+Page\+::handle\+Create\+Bridge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+method for handling the creation of a bridge 
+
+\hyperlink{class_home_page_a5a1923f90a2ac6367869f9423e9a3559}{Home\+Page\+::handle\+Http\+Response\+Add\+Bridge} 
+\begin{DoxyParams}{Parameters}
+{\em args} & none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$\+: returns void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a5a1923f90a2ac6367869f9423e9a3559}\label{class_home_page_a5a1923f90a2ac6367869f9423e9a3559}} 
+\index{Home\+Page@{Home\+Page}!handle\+Http\+Response\+Add\+Bridge@{handle\+Http\+Response\+Add\+Bridge}}
+\index{handle\+Http\+Response\+Add\+Bridge@{handle\+Http\+Response\+Add\+Bridge}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{handle\+Http\+Response\+Add\+Bridge()}{handleHttpResponseAddBridge()}}
+{\footnotesize\ttfamily void Home\+Page\+::handle\+Http\+Response\+Add\+Bridge (\begin{DoxyParamCaption}\item[{boost\+::system\+::error\+\_\+code}]{err,  }\item[{const Wt\+::\+Http\+::\+Message \&}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+method for handling the adding of a bridge 
+
+\hyperlink{class_home_page_a5a1923f90a2ac6367869f9423e9a3559}{Home\+Page\+::handle\+Http\+Response\+Add\+Bridge} 
+\begin{DoxyParams}{Parameters}
+{\em args} & boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$\+: returns void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a9fd215402b2cc96281c39454e9c70d69}\label{class_home_page_a9fd215402b2cc96281c39454e9c70d69}} 
+\index{Home\+Page@{Home\+Page}!handle\+Http\+Response\+Delete\+Schedule@{handle\+Http\+Response\+Delete\+Schedule}}
+\index{handle\+Http\+Response\+Delete\+Schedule@{handle\+Http\+Response\+Delete\+Schedule}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{handle\+Http\+Response\+Delete\+Schedule()}{handleHttpResponseDeleteSchedule()}}
+{\footnotesize\ttfamily void Home\+Page\+::handle\+Http\+Response\+Delete\+Schedule (\begin{DoxyParamCaption}\item[{boost\+::system\+::error\+\_\+code}]{err,  }\item[{const Wt\+::\+Http\+::\+Message \&}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+handles the http response after deleting a specific schedule 
+
+handle\+Http\+Response\+Delete\+Schedule 
+\begin{DoxyParams}{Parameters}
+{\em err} & a boost err variable \\
+\hline
+{\em response} & a Wt http message response variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a84f498dee2335d7f6d11e89105cb82bc}\label{class_home_page_a84f498dee2335d7f6d11e89105cb82bc}} 
+\index{Home\+Page@{Home\+Page}!handle\+Http\+Response\+Get\+Schedule@{handle\+Http\+Response\+Get\+Schedule}}
+\index{handle\+Http\+Response\+Get\+Schedule@{handle\+Http\+Response\+Get\+Schedule}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{handle\+Http\+Response\+Get\+Schedule()}{handleHttpResponseGetSchedule()}}
+{\footnotesize\ttfamily void Home\+Page\+::handle\+Http\+Response\+Get\+Schedule (\begin{DoxyParamCaption}\item[{boost\+::system\+::error\+\_\+code}]{err,  }\item[{const Wt\+::\+Http\+::\+Message \&}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+handles the http response after getting all of the current schedule 
+
+handle\+Http\+Response\+Get\+Schedule 
+\begin{DoxyParams}{Parameters}
+{\em err} & a boost err variable \\
+\hline
+{\em response} & a Wt http message response variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a7ca1f03912ee0763d6fd25e1c4b21eff}\label{class_home_page_a7ca1f03912ee0763d6fd25e1c4b21eff}} 
+\index{Home\+Page@{Home\+Page}!handle\+Http\+Response\+Lights@{handle\+Http\+Response\+Lights}}
+\index{handle\+Http\+Response\+Lights@{handle\+Http\+Response\+Lights}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{handle\+Http\+Response\+Lights()}{handleHttpResponseLights()}}
+{\footnotesize\ttfamily void Home\+Page\+::handle\+Http\+Response\+Lights (\begin{DoxyParamCaption}\item[{boost\+::system\+::error\+\_\+code}]{err,  }\item[{const Wt\+::\+Http\+::\+Message \&}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+takes an error code err and a message response as parameters and handles the Http Response Lights it. It does not have a return value. 
+
+handle\+Http\+Response\+Lights 
+\begin{DoxyParams}{Parameters}
+{\em err} & error code \\
+\hline
+{\em response} & message response \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a35ecb731b87a0b752be365d42dfa8bf7}\label{class_home_page_a35ecb731b87a0b752be365d42dfa8bf7}} 
+\index{Home\+Page@{Home\+Page}!handle\+Http\+Response\+Prediction@{handle\+Http\+Response\+Prediction}}
+\index{handle\+Http\+Response\+Prediction@{handle\+Http\+Response\+Prediction}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{handle\+Http\+Response\+Prediction()}{handleHttpResponsePrediction()}}
+{\footnotesize\ttfamily void Home\+Page\+::handle\+Http\+Response\+Prediction (\begin{DoxyParamCaption}\item[{boost\+::system\+::error\+\_\+code}]{err,  }\item[{const Wt\+::\+Http\+::\+Message \&}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+response from api call to creating a specific scheduled event 
+
+handle\+Http\+Response\+Prediction 
+\begin{DoxyParams}{Parameters}
+{\em err} & a boost err variable \\
+\hline
+{\em response} & a Wt http message response variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a7f37c86187bf9bee98eb5f905422eb9c}\label{class_home_page_a7f37c86187bf9bee98eb5f905422eb9c}} 
+\index{Home\+Page@{Home\+Page}!handle\+Http\+Response\+Prediction\+Off@{handle\+Http\+Response\+Prediction\+Off}}
+\index{handle\+Http\+Response\+Prediction\+Off@{handle\+Http\+Response\+Prediction\+Off}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{handle\+Http\+Response\+Prediction\+Off()}{handleHttpResponsePredictionOff()}}
+{\footnotesize\ttfamily void Home\+Page\+::handle\+Http\+Response\+Prediction\+Off (\begin{DoxyParamCaption}\item[{boost\+::system\+::error\+\_\+code}]{err,  }\item[{const Wt\+::\+Http\+::\+Message \&}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+response from api call to delete a specific scheduled event 
+
+handle\+Http\+Response\+Prediction\+Off 
+\begin{DoxyParams}{Parameters}
+{\em err} & a boost err variable \\
+\hline
+{\em response} & a Wt http message response variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a3ece53358d71e7a893cf4284dbcff175}\label{class_home_page_a3ece53358d71e7a893cf4284dbcff175}} 
+\index{Home\+Page@{Home\+Page}!handle\+Lights\+In\+Groups@{handle\+Lights\+In\+Groups}}
+\index{handle\+Lights\+In\+Groups@{handle\+Lights\+In\+Groups}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{handle\+Lights\+In\+Groups()}{handleLightsInGroups()}}
+{\footnotesize\ttfamily void Home\+Page\+::handle\+Lights\+In\+Groups (\begin{DoxyParamCaption}\item[{boost\+::system\+::error\+\_\+code}]{err,  }\item[{const Wt\+::\+Http\+::\+Message \&}]{response,  }\item[{int}]{group\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+adds all lights to their groups 
+
+handle\+Lights\+In\+Groups 
+\begin{DoxyParams}{Parameters}
+{\em err} & a boost err variable \\
+\hline
+{\em response} & a Wt http message response variable \\
+\hline
+{\em group\+\_\+index} & the integer index of the group we are adding to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a8e33de7e775f85f91d7792eb315b8015}\label{class_home_page_a8e33de7e775f85f91d7792eb315b8015}} 
+\index{Home\+Page@{Home\+Page}!handle\+Prediction@{handle\+Prediction}}
+\index{handle\+Prediction@{handle\+Prediction}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{handle\+Prediction()}{handlePrediction()}}
+{\footnotesize\ttfamily void Home\+Page\+::handle\+Prediction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+creates predicted events using the \hyperlink{class_predict}{Predict} class and logistic regression 
+
+handle\+Prediction 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_af6d8f0979312ab9971c4c696992f5096}\label{class_home_page_af6d8f0979312ab9971c4c696992f5096}} 
+\index{Home\+Page@{Home\+Page}!handle\+Prediction\+Off@{handle\+Prediction\+Off}}
+\index{handle\+Prediction\+Off@{handle\+Prediction\+Off}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{handle\+Prediction\+Off()}{handlePredictionOff()}}
+{\footnotesize\ttfamily void Home\+Page\+::handle\+Prediction\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+deletes all events scheduled through predictive mode 
+
+handle\+Prediction\+Off 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_ad43b3bb765e485771e9116edbcec0b2b}\label{class_home_page_ad43b3bb765e485771e9116edbcec0b2b}} 
+\index{Home\+Page@{Home\+Page}!handle\+Schedule\+Create@{handle\+Schedule\+Create}}
+\index{handle\+Schedule\+Create@{handle\+Schedule\+Create}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{handle\+Schedule\+Create()}{handleScheduleCreate()}}
+{\footnotesize\ttfamily void Home\+Page\+::handle\+Schedule\+Create (\begin{DoxyParamCaption}\item[{int}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+makes an A\+PI to schedule a change dependent on several text fields 
+
+handle\+Schedule\+Create 
+\begin{DoxyParams}{Parameters}
+{\em group} & an int (0 or 1) representing whether to schedule a light, or group, respectively \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a2e1ef1f628cf82023a688fabfc272bff}\label{class_home_page_a2e1ef1f628cf82023a688fabfc272bff}} 
+\index{Home\+Page@{Home\+Page}!handle\+Schedule\+Create\+Group@{handle\+Schedule\+Create\+Group}}
+\index{handle\+Schedule\+Create\+Group@{handle\+Schedule\+Create\+Group}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{handle\+Schedule\+Create\+Group()}{handleScheduleCreateGroup()}}
+{\footnotesize\ttfamily void Home\+Page\+::handle\+Schedule\+Create\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+calls the handle\+Schedule\+Create for an entire group 
+
+handle\+Schedule\+Create\+Light 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a90f36d7359af291e1becf350c7805768}\label{class_home_page_a90f36d7359af291e1becf350c7805768}} 
+\index{Home\+Page@{Home\+Page}!handle\+Schedule\+Create\+Light@{handle\+Schedule\+Create\+Light}}
+\index{handle\+Schedule\+Create\+Light@{handle\+Schedule\+Create\+Light}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{handle\+Schedule\+Create\+Light()}{handleScheduleCreateLight()}}
+{\footnotesize\ttfamily void Home\+Page\+::handle\+Schedule\+Create\+Light (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+calls the handle\+Schedule\+Create for only a light 
+
+handle\+Schedule\+Create\+Light 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_af449cf14bc9d0196e0cb4a4c352b3919}\label{class_home_page_af449cf14bc9d0196e0cb4a4c352b3919}} 
+\index{Home\+Page@{Home\+Page}!handle\+Schedule\+Delete@{handle\+Schedule\+Delete}}
+\index{handle\+Schedule\+Delete@{handle\+Schedule\+Delete}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{handle\+Schedule\+Delete()}{handleScheduleDelete()}}
+{\footnotesize\ttfamily void Home\+Page\+::handle\+Schedule\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+a method handling button clicks to delete a particular schedule 
+
+handle\+Schedule\+Delete 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a019ab5ef1587a197837badfc32725af8}\label{class_home_page_a019ab5ef1587a197837badfc32725af8}} 
+\index{Home\+Page@{Home\+Page}!remove\+Group@{remove\+Group}}
+\index{remove\+Group@{remove\+Group}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{remove\+Group()}{removeGroup()}}
+{\footnotesize\ttfamily void Home\+Page\+::remove\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+deletes a specified group based on a text input field 
+
+remove\+Group  none \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_ace0313d818ae7561f7707c6fa74f630b}\label{class_home_page_ace0313d818ae7561f7707c6fa74f630b}} 
+\index{Home\+Page@{Home\+Page}!remove\+Light\+From\+Group@{remove\+Light\+From\+Group}}
+\index{remove\+Light\+From\+Group@{remove\+Light\+From\+Group}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{remove\+Light\+From\+Group()}{removeLightFromGroup()}}
+{\footnotesize\ttfamily void Home\+Page\+::remove\+Light\+From\+Group (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
+
+
+
+removes a light to an existing group 
+
+remove\+Light\+From\+Group 
+\begin{DoxyParams}{Parameters}
+{\em str} & the name of the light to removes from the group \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a0b2d780662f8946abb173e1f3fe136d7}\label{class_home_page_a0b2d780662f8946abb173e1f3fe136d7}} 
+\index{Home\+Page@{Home\+Page}!store\+Light\+Data@{store\+Light\+Data}}
+\index{store\+Light\+Data@{store\+Light\+Data}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{store\+Light\+Data()}{storeLightData()}}
+{\footnotesize\ttfamily void Home\+Page\+::store\+Light\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+method for creating a thread to store light data 
+
+store\+Light\+Data 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a3823da7245637b5b16eec173660661fc}\label{class_home_page_a3823da7245637b5b16eec173660661fc}} 
+\index{Home\+Page@{Home\+Page}!toggle\+Login@{toggle\+Login}}
+\index{toggle\+Login@{toggle\+Login}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{toggle\+Login()}{toggleLogin()}}
+{\footnotesize\ttfamily void Home\+Page\+::toggle\+Login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+method for moving between pages 
+
+\hyperlink{class_home_page_a3823da7245637b5b16eec173660661fc}{Home\+Page\+::toggle\+Login}, Home\+Page\+::toggle\+Settings, Home\+Page\+::toggle\+Home\+Page 
+\begin{DoxyParams}{Parameters}
+{\em args} & none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$\+: returns void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a8c56067a3cd4dc321572a034d3135ab9}\label{class_home_page_a8c56067a3cd4dc321572a034d3135ab9}} 
+\index{Home\+Page@{Home\+Page}!toggle\+Thread@{toggle\+Thread}}
+\index{toggle\+Thread@{toggle\+Thread}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{toggle\+Thread()}{toggleThread()}}
+{\footnotesize\ttfamily void Home\+Page\+::toggle\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+turns on/off recording of light states for predictive mode 
+
+toggle\+Thread 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a4dd93ce31ced15fd70992fe6ef67d28b}\label{class_home_page_a4dd93ce31ced15fd70992fe6ef67d28b}} 
+\index{Home\+Page@{Home\+Page}!update@{update}}
+\index{update@{update}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Home\+Page\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+method for updating a user\textquotesingle{}s personal and account info 
+
+\hyperlink{class_home_page_a4dd93ce31ced15fd70992fe6ef67d28b}{Home\+Page\+::update} 
+\begin{DoxyParams}{Parameters}
+{\em args} & none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$\+: returns void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_a0231c983e866ff4f574d9f26cac7c944}\label{class_home_page_a0231c983e866ff4f574d9f26cac7c944}} 
+\index{Home\+Page@{Home\+Page}!update\+Bridge\+Text@{update\+Bridge\+Text}}
+\index{update\+Bridge\+Text@{update\+Bridge\+Text}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{update\+Bridge\+Text()}{updateBridgeText()}}
+{\footnotesize\ttfamily void Home\+Page\+::update\+Bridge\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+method for updating current bridges connected with a user 
+
+\hyperlink{class_home_page_a0231c983e866ff4f574d9f26cac7c944}{Home\+Page\+::update\+Bridge\+Text} 
+\begin{DoxyParams}{Parameters}
+{\em args} & none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$\+: returns void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_aa8de2797f59b77f46f0eaadaec8a63ed}\label{class_home_page_aa8de2797f59b77f46f0eaadaec8a63ed}} 
+\index{Home\+Page@{Home\+Page}!update\+Password@{update\+Password}}
+\index{update\+Password@{update\+Password}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{update\+Password()}{updatePassword()}}
+{\footnotesize\ttfamily void Home\+Page\+::update\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+method for updating a user\textquotesingle{}s password 
+
+\hyperlink{class_home_page_aa8de2797f59b77f46f0eaadaec8a63ed}{Home\+Page\+::update\+Password} 
+\begin{DoxyParams}{Parameters}
+{\em args} & none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$\+: returns void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_home_page_af34743abfb066e71ef7b1d2f507415eb}\label{class_home_page_af34743abfb066e71ef7b1d2f507415eb}} 
+\index{Home\+Page@{Home\+Page}!validate\+Login@{validate\+Login}}
+\index{validate\+Login@{validate\+Login}!Home\+Page@{Home\+Page}}
+\subsubsection{\texorpdfstring{validate\+Login()}{validateLogin()}}
+{\footnotesize\ttfamily void Home\+Page\+::validate\+Login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+method for validating user\textquotesingle{}s login credentials, sets the currentuser to and object of this user if credentials are correct 
+
+\hyperlink{class_home_page_af34743abfb066e71ef7b1d2f507415eb}{Home\+Page\+::validate\+Login} 
+\begin{DoxyParams}{Parameters}
+{\em args} & none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$\+: returns void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Home\+Page.\+hpp\item 
+Home\+Page.\+cpp\end{DoxyCompactItemize}

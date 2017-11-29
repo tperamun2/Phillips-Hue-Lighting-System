@@ -1,0 +1,186 @@
+\hypertarget{class_schedule_item}{}\section{Schedule\+Item Class Reference}
+\label{class_schedule_item}\index{Schedule\+Item@{Schedule\+Item}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_schedule_item_a8cbba55bd38a4f68bdec8c6d854a9359}{Schedule\+Item} ()
+\begin{DoxyCompactList}\small\item\em The scheduleitem class which represents a scheduled event to send to the hue api. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_schedule_item_a1b3f5ec201516ee539349966bfa4c342}{$\sim$\+Schedule\+Item} ()
+\begin{DoxyCompactList}\small\item\em deconstructor for \hyperlink{class_schedule_item}{Schedule\+Item} class \end{DoxyCompactList}\item 
+void \hyperlink{class_schedule_item_a3582a8819347ee2e0a5ee550e718cb51}{set\+State} (\hyperlink{class_state}{State} $\ast$state)
+\begin{DoxyCompactList}\small\item\em setter for the state variable \end{DoxyCompactList}\item 
+void \hyperlink{class_schedule_item_a690b36b91bb76a8568550d9350cad2f5}{set\+Time} (tm $\ast$time)
+\begin{DoxyCompactList}\small\item\em setter for the time variable \end{DoxyCompactList}\item 
+void \hyperlink{class_schedule_item_ae7a664bd9f94a5a8dcd4394c0c2d046a}{send\+Schedule} (int id, int group, std\+::string ip, std\+::string port)
+\begin{DoxyCompactList}\small\item\em makes an api call scheduling the specified light/group id at the stored time with the stored state \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_schedule_item_af80dc4ae6e2c7400ed74572621d40739}{handle\+Http\+Response\+Schedule} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em prints the response of sending the schedule \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_schedule_item_a87e1755a000149294aec8ef4b4a950d1}{build\+Message} (int id, int group)
+\begin{DoxyCompactList}\small\item\em Takes the time and state and builds them into a message to send for scheduling. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_schedule_item_aa5f976a7e2bb9880337860ab2488c88f}\label{class_schedule_item_aa5f976a7e2bb9880337860ab2488c88f}} 
+tm $\ast$ {\bfseries time}
+\item 
+\mbox{\Hypertarget{class_schedule_item_ac450f2dce58d66ce77c2f4ed357c42d8}\label{class_schedule_item_ac450f2dce58d66ce77c2f4ed357c42d8}} 
+\hyperlink{class_state}{State} $\ast$ {\bfseries state}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_schedule_item_a8cbba55bd38a4f68bdec8c6d854a9359}\label{class_schedule_item_a8cbba55bd38a4f68bdec8c6d854a9359}} 
+\index{Schedule\+Item@{Schedule\+Item}!Schedule\+Item@{Schedule\+Item}}
+\index{Schedule\+Item@{Schedule\+Item}!Schedule\+Item@{Schedule\+Item}}
+\subsubsection{\texorpdfstring{Schedule\+Item()}{ScheduleItem()}}
+{\footnotesize\ttfamily Schedule\+Item\+::\+Schedule\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The scheduleitem class which represents a scheduled event to send to the hue api. 
+
+\begin{DoxyAuthor}{Author}
+Gurkiran Tatla 
+
+Jake Schindler 
+
+Justine Kim 
+
+Paul Salvatore 
+
+Timal Peramune \hyperlink{class_schedule_item}{Schedule\+Item} constructor for \hyperlink{class_schedule_item}{Schedule\+Item} class
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_schedule_item_a1b3f5ec201516ee539349966bfa4c342}\label{class_schedule_item_a1b3f5ec201516ee539349966bfa4c342}} 
+\index{Schedule\+Item@{Schedule\+Item}!````~Schedule\+Item@{$\sim$\+Schedule\+Item}}
+\index{````~Schedule\+Item@{$\sim$\+Schedule\+Item}!Schedule\+Item@{Schedule\+Item}}
+\subsubsection{\texorpdfstring{$\sim$\+Schedule\+Item()}{~ScheduleItem()}}
+{\footnotesize\ttfamily Schedule\+Item\+::$\sim$\+Schedule\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+deconstructor for \hyperlink{class_schedule_item}{Schedule\+Item} class 
+
+$\sim$\+Schedule\+Item 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_schedule_item_a87e1755a000149294aec8ef4b4a950d1}\label{class_schedule_item_a87e1755a000149294aec8ef4b4a950d1}} 
+\index{Schedule\+Item@{Schedule\+Item}!build\+Message@{build\+Message}}
+\index{build\+Message@{build\+Message}!Schedule\+Item@{Schedule\+Item}}
+\subsubsection{\texorpdfstring{build\+Message()}{buildMessage()}}
+{\footnotesize\ttfamily std\+::string Schedule\+Item\+::build\+Message (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Takes the time and state and builds them into a message to send for scheduling. 
+
+build\+Message 
+\begin{DoxyParams}{Parameters}
+{\em id} & an integer representing the id of the scheduled item \\
+\hline
+{\em group} & an integer (0 or 1) representing if we are scheduling a light or group, respectively \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string message to be the body of the schedule api call 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_schedule_item_af80dc4ae6e2c7400ed74572621d40739}\label{class_schedule_item_af80dc4ae6e2c7400ed74572621d40739}} 
+\index{Schedule\+Item@{Schedule\+Item}!handle\+Http\+Response\+Schedule@{handle\+Http\+Response\+Schedule}}
+\index{handle\+Http\+Response\+Schedule@{handle\+Http\+Response\+Schedule}!Schedule\+Item@{Schedule\+Item}}
+\subsubsection{\texorpdfstring{handle\+Http\+Response\+Schedule()}{handleHttpResponseSchedule()}}
+{\footnotesize\ttfamily void Schedule\+Item\+::handle\+Http\+Response\+Schedule (\begin{DoxyParamCaption}\item[{boost\+::system\+::error\+\_\+code}]{err,  }\item[{const Wt\+::\+Http\+::\+Message \&}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+prints the response of sending the schedule 
+
+handle\+Http\+Response\+Schedule 
+\begin{DoxyParams}{Parameters}
+{\em err} & a boost error response variable \\
+\hline
+{\em response} & a wt http response variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_schedule_item_ae7a664bd9f94a5a8dcd4394c0c2d046a}\label{class_schedule_item_ae7a664bd9f94a5a8dcd4394c0c2d046a}} 
+\index{Schedule\+Item@{Schedule\+Item}!send\+Schedule@{send\+Schedule}}
+\index{send\+Schedule@{send\+Schedule}!Schedule\+Item@{Schedule\+Item}}
+\subsubsection{\texorpdfstring{send\+Schedule()}{sendSchedule()}}
+{\footnotesize\ttfamily void Schedule\+Item\+::send\+Schedule (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{group,  }\item[{std\+::string}]{ip,  }\item[{std\+::string}]{port }\end{DoxyParamCaption})}
+
+
+
+makes an api call scheduling the specified light/group id at the stored time with the stored state 
+
+send\+Schedule 
+\begin{DoxyParams}{Parameters}
+{\em id} & an integer representing the id to schedule \\
+\hline
+{\em group} & an integer (0 or 1) representing if we are scheduling a light or group, respectively \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_schedule_item_a3582a8819347ee2e0a5ee550e718cb51}\label{class_schedule_item_a3582a8819347ee2e0a5ee550e718cb51}} 
+\index{Schedule\+Item@{Schedule\+Item}!set\+State@{set\+State}}
+\index{set\+State@{set\+State}!Schedule\+Item@{Schedule\+Item}}
+\subsubsection{\texorpdfstring{set\+State()}{setState()}}
+{\footnotesize\ttfamily void Schedule\+Item\+::set\+State (\begin{DoxyParamCaption}\item[{\hyperlink{class_state}{State} $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+setter for the state variable 
+
+set\+State 
+\begin{DoxyParams}{Parameters}
+{\em state} & a state variable with the schedule state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_schedule_item_a690b36b91bb76a8568550d9350cad2f5}\label{class_schedule_item_a690b36b91bb76a8568550d9350cad2f5}} 
+\index{Schedule\+Item@{Schedule\+Item}!set\+Time@{set\+Time}}
+\index{set\+Time@{set\+Time}!Schedule\+Item@{Schedule\+Item}}
+\subsubsection{\texorpdfstring{set\+Time()}{setTime()}}
+{\footnotesize\ttfamily void Schedule\+Item\+::set\+Time (\begin{DoxyParamCaption}\item[{tm $\ast$}]{time }\end{DoxyParamCaption})}
+
+
+
+setter for the time variable 
+
+set\+Time 
+\begin{DoxyParams}{Parameters}
+{\em time} & a tm variable with the schedule time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Schedule\+Item.\+hpp\item 
+Schedule\+Item.\+cpp\end{DoxyCompactItemize}

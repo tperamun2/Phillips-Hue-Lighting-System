@@ -1,0 +1,283 @@
+\hypertarget{class_state}{}\section{State Class Reference}
+\label{class_state}\index{State@{State}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_state_a5e37ff8935f49ac28c0d0faeae304c8e}{State} (bool is\+On, int brightness, long long hue, int saturation, \hyperlink{class_light}{Light} $\ast$light)
+\begin{DoxyCompactList}\small\item\em The state class which represents the state parameters for a particular light. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_state_a6e4386b06561162eae88727c1726d631}\label{class_state_a6e4386b06561162eae88727c1726d631}} 
+{\bfseries State} (bool is\+On, int brightness, long long hue, int transition\+Time)
+\item 
+\hyperlink{class_state_afab438d92b90dc18d194dbd9c9c8bab3}{$\sim$\+State} ()
+\begin{DoxyCompactList}\small\item\em destructor for state class \end{DoxyCompactList}\item 
+bool \hyperlink{class_state_a51fd7ff4c5635fc399646af9d2d87aa9}{is\+ON} ()
+\begin{DoxyCompactList}\small\item\em retrieves the state and returns it as a bool. it takes in no parameters. \end{DoxyCompactList}\item 
+int \hyperlink{class_state_a1d41660b888020ca18e15ba21549524c}{get\+Brightness} ()
+\begin{DoxyCompactList}\small\item\em retrieves the brightness and returns it as an int. it takes in no parameters. \end{DoxyCompactList}\item 
+long long \hyperlink{class_state_a8f92126bdf14a5c0109e041f29747366}{get\+Hue} ()
+\begin{DoxyCompactList}\small\item\em retrieves the hue and returns it as a long long. it takes in no parameters. \end{DoxyCompactList}\item 
+int \hyperlink{class_state_aacba45740c95cd6a8efa6a441e90b1f4}{get\+Saturation} ()
+\begin{DoxyCompactList}\small\item\em retrieves the saturation and returns it as an int. it takes in no parameters. \end{DoxyCompactList}\item 
+int \hyperlink{class_state_ac91f9f2eb66b235470e54dbeec0bc3da}{get\+Transition\+Time} ()
+\begin{DoxyCompactList}\small\item\em retrieves the transition time for the state \end{DoxyCompactList}\item 
+void \hyperlink{class_state_a01a82c054b5a252942247dd89fc0aabe}{set\+ON} (std\+::string ip, std\+::string port)
+\begin{DoxyCompactList}\small\item\em changes the light to turn on. it takes no parameters and has no return value. \end{DoxyCompactList}\item 
+void \hyperlink{class_state_af2ff926d083755dc5c0efe8c115817b6}{set\+O\+FF} (std\+::string ip, std\+::string port)
+\begin{DoxyCompactList}\small\item\em turn the light off. it takes no parameters and has no return value. \end{DoxyCompactList}\item 
+void \hyperlink{class_state_a7fdaf261372291d6bbabfa9ed19fb44a}{set\+Hue} (long long hue, std\+::string ip, std\+::string port)
+\begin{DoxyCompactList}\small\item\em sets the hue of a light, it takes in long long hue and has no return value. \end{DoxyCompactList}\item 
+void \hyperlink{class_state_a58b256ffbe7d3475ac808a7f3d3214c0}{set\+Brightness} (int brightness, std\+::string ip, std\+::string port)
+\begin{DoxyCompactList}\small\item\em changes the brightness of a light, it takes in int brightness and a parameter and has no return type \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_state_aaedeb7634466d1f6e572e54537055b03}\label{class_state_aaedeb7634466d1f6e572e54537055b03}} 
+void {\bfseries set\+Transition\+Time} (int transition\+Time)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_state_a6cd3b811f48e75ae37dde9f42949de67}\label{class_state_a6cd3b811f48e75ae37dde9f42949de67}} 
+bool {\bfseries is\+On}
+\item 
+\mbox{\Hypertarget{class_state_a1fb6bd9d8359bc551391e5398971837a}\label{class_state_a1fb6bd9d8359bc551391e5398971837a}} 
+int {\bfseries brightness}
+\item 
+\mbox{\Hypertarget{class_state_a6d74abf435accde10ab4c74a7e8f28f9}\label{class_state_a6d74abf435accde10ab4c74a7e8f28f9}} 
+long long {\bfseries hue}
+\item 
+\mbox{\Hypertarget{class_state_a1493b952db8842ab3c4d77841ab47da0}\label{class_state_a1493b952db8842ab3c4d77841ab47da0}} 
+int {\bfseries saturation}
+\item 
+\mbox{\Hypertarget{class_state_a01b875b15cf0202c425b783f23c9f1bf}\label{class_state_a01b875b15cf0202c425b783f23c9f1bf}} 
+int {\bfseries transition\+Time}
+\item 
+\mbox{\Hypertarget{class_state_a2faa32b12d21fdd7dff98809763cc120}\label{class_state_a2faa32b12d21fdd7dff98809763cc120}} 
+\hyperlink{class_light}{Light} $\ast$ {\bfseries light}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_state_a5e37ff8935f49ac28c0d0faeae304c8e}\label{class_state_a5e37ff8935f49ac28c0d0faeae304c8e}} 
+\index{State@{State}!State@{State}}
+\index{State@{State}!State@{State}}
+\subsubsection{\texorpdfstring{State()}{State()}}
+{\footnotesize\ttfamily State\+::\+State (\begin{DoxyParamCaption}\item[{bool}]{is\+On,  }\item[{int}]{brightness,  }\item[{long long}]{hue,  }\item[{int}]{saturation,  }\item[{\hyperlink{class_light}{Light} $\ast$}]{light }\end{DoxyParamCaption})}
+
+
+
+The state class which represents the state parameters for a particular light. 
+
+\begin{DoxyAuthor}{Author}
+Gurkiran Tatla 
+
+Jake Schindler 
+
+Justine Kim 
+
+Paul Salvatore 
+
+Timal Peramune \hyperlink{class_state}{State} constructor for the state variable
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em is\+On} & boolean saying if light is on or off \\
+\hline
+{\em brightness} & int representing brightness \\
+\hline
+{\em hue} & long long representing hue \\
+\hline
+{\em saturation} & int representing saturation \\
+\hline
+{\em light} & \hyperlink{class_light}{Light} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_afab438d92b90dc18d194dbd9c9c8bab3}\label{class_state_afab438d92b90dc18d194dbd9c9c8bab3}} 
+\index{State@{State}!````~State@{$\sim$\+State}}
+\index{````~State@{$\sim$\+State}!State@{State}}
+\subsubsection{\texorpdfstring{$\sim$\+State()}{~State()}}
+{\footnotesize\ttfamily State\+::$\sim$\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destructor for state class 
+
+\hyperlink{class_state_afab438d92b90dc18d194dbd9c9c8bab3}{$\sim$\+State()} 
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_state_a1d41660b888020ca18e15ba21549524c}\label{class_state_a1d41660b888020ca18e15ba21549524c}} 
+\index{State@{State}!get\+Brightness@{get\+Brightness}}
+\index{get\+Brightness@{get\+Brightness}!State@{State}}
+\subsubsection{\texorpdfstring{get\+Brightness()}{getBrightness()}}
+{\footnotesize\ttfamily int State\+::get\+Brightness (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retrieves the brightness and returns it as an int. it takes in no parameters. 
+
+get\+Brightness 
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int representing brightness of the light 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_a8f92126bdf14a5c0109e041f29747366}\label{class_state_a8f92126bdf14a5c0109e041f29747366}} 
+\index{State@{State}!get\+Hue@{get\+Hue}}
+\index{get\+Hue@{get\+Hue}!State@{State}}
+\subsubsection{\texorpdfstring{get\+Hue()}{getHue()}}
+{\footnotesize\ttfamily long long State\+::get\+Hue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retrieves the hue and returns it as a long long. it takes in no parameters. 
+
+get\+Hue 
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+long long representing hue of the light 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_aacba45740c95cd6a8efa6a441e90b1f4}\label{class_state_aacba45740c95cd6a8efa6a441e90b1f4}} 
+\index{State@{State}!get\+Saturation@{get\+Saturation}}
+\index{get\+Saturation@{get\+Saturation}!State@{State}}
+\subsubsection{\texorpdfstring{get\+Saturation()}{getSaturation()}}
+{\footnotesize\ttfamily int State\+::get\+Saturation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retrieves the saturation and returns it as an int. it takes in no parameters. 
+
+\hyperlink{class_state_aacba45740c95cd6a8efa6a441e90b1f4}{get\+Saturation()} 
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int representing saturation of the light 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_ac91f9f2eb66b235470e54dbeec0bc3da}\label{class_state_ac91f9f2eb66b235470e54dbeec0bc3da}} 
+\index{State@{State}!get\+Transition\+Time@{get\+Transition\+Time}}
+\index{get\+Transition\+Time@{get\+Transition\+Time}!State@{State}}
+\subsubsection{\texorpdfstring{get\+Transition\+Time()}{getTransitionTime()}}
+{\footnotesize\ttfamily int State\+::get\+Transition\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retrieves the transition time for the state 
+
+get\+Transition\+Time 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an integer representing the transition time in seconds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_a51fd7ff4c5635fc399646af9d2d87aa9}\label{class_state_a51fd7ff4c5635fc399646af9d2d87aa9}} 
+\index{State@{State}!is\+ON@{is\+ON}}
+\index{is\+ON@{is\+ON}!State@{State}}
+\subsubsection{\texorpdfstring{is\+O\+N()}{isON()}}
+{\footnotesize\ttfamily bool State\+::is\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retrieves the state and returns it as a bool. it takes in no parameters. 
+
+get\+ON 
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool representing if the light is on or off 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_a58b256ffbe7d3475ac808a7f3d3214c0}\label{class_state_a58b256ffbe7d3475ac808a7f3d3214c0}} 
+\index{State@{State}!set\+Brightness@{set\+Brightness}}
+\index{set\+Brightness@{set\+Brightness}!State@{State}}
+\subsubsection{\texorpdfstring{set\+Brightness()}{setBrightness()}}
+{\footnotesize\ttfamily void State\+::set\+Brightness (\begin{DoxyParamCaption}\item[{int}]{brightness,  }\item[{std\+::string}]{ip,  }\item[{std\+::string}]{port }\end{DoxyParamCaption})}
+
+
+
+changes the brightness of a light, it takes in int brightness and a parameter and has no return type 
+
+set\+Brightness 
+\begin{DoxyParams}{Parameters}
+{\em brightness} & int representing the brightness \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_a7fdaf261372291d6bbabfa9ed19fb44a}\label{class_state_a7fdaf261372291d6bbabfa9ed19fb44a}} 
+\index{State@{State}!set\+Hue@{set\+Hue}}
+\index{set\+Hue@{set\+Hue}!State@{State}}
+\subsubsection{\texorpdfstring{set\+Hue()}{setHue()}}
+{\footnotesize\ttfamily void State\+::set\+Hue (\begin{DoxyParamCaption}\item[{long long}]{hue,  }\item[{std\+::string}]{ip,  }\item[{std\+::string}]{port }\end{DoxyParamCaption})}
+
+
+
+sets the hue of a light, it takes in long long hue and has no return value. 
+
+set\+Hue 
+\begin{DoxyParams}{Parameters}
+{\em hue} & long long representing the hue \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_af2ff926d083755dc5c0efe8c115817b6}\label{class_state_af2ff926d083755dc5c0efe8c115817b6}} 
+\index{State@{State}!set\+O\+FF@{set\+O\+FF}}
+\index{set\+O\+FF@{set\+O\+FF}!State@{State}}
+\subsubsection{\texorpdfstring{set\+O\+F\+F()}{setOFF()}}
+{\footnotesize\ttfamily void State\+::set\+O\+FF (\begin{DoxyParamCaption}\item[{std\+::string}]{ip,  }\item[{std\+::string}]{port }\end{DoxyParamCaption})}
+
+
+
+turn the light off. it takes no parameters and has no return value. 
+
+\hyperlink{class_state_af2ff926d083755dc5c0efe8c115817b6}{set\+O\+F\+F()} 
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_a01a82c054b5a252942247dd89fc0aabe}\label{class_state_a01a82c054b5a252942247dd89fc0aabe}} 
+\index{State@{State}!set\+ON@{set\+ON}}
+\index{set\+ON@{set\+ON}!State@{State}}
+\subsubsection{\texorpdfstring{set\+O\+N()}{setON()}}
+{\footnotesize\ttfamily void State\+::set\+ON (\begin{DoxyParamCaption}\item[{std\+::string}]{ip,  }\item[{std\+::string}]{port }\end{DoxyParamCaption})}
+
+
+
+changes the light to turn on. it takes no parameters and has no return value. 
+
+\hyperlink{class_state_a01a82c054b5a252942247dd89fc0aabe}{set\+O\+N()} 
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+State.\+hpp\item 
+State.\+cpp\end{DoxyCompactItemize}

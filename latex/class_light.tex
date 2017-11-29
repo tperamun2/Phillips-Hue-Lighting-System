@@ -1,0 +1,262 @@
+\hypertarget{class_light}{}\section{Light Class Reference}
+\label{class_light}\index{Light@{Light}}
+Inheritance diagram for Light\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_light}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_light_a51f6d94b66ec884ce479ae481de8247b}{Light} (std\+::string id, std\+::string name, \hyperlink{class_home_page}{Home\+Page} $\ast$page)
+\begin{DoxyCompactList}\small\item\em The light class which represents a Hue light with it\textquotesingle{}s associated state. \end{DoxyCompactList}\item 
+\hyperlink{class_light_a190b96270bfc664d1e209a5055330f40}{Light} (std\+::string id, std\+::string name, \hyperlink{class_state}{State} $\ast$state, \hyperlink{class_home_page}{Home\+Page} $\ast$page)
+\begin{DoxyCompactList}\small\item\em Constructor; Initialization function to create a \hyperlink{class_light}{Light}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_light_ace49d0a563a4e9711e03b144465e6e55}\label{class_light_ace49d0a563a4e9711e03b144465e6e55}} 
+{\bfseries Light} (std\+::string id, std\+::string name, \hyperlink{class_home_page}{Home\+Page} $\ast$page, \hyperlink{class_state}{State} $\ast$state)
+\item 
+\hyperlink{class_light_ad0e59fad13bb6cfadc25b2c477e9ddc7}{$\sim$\+Light} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+\hyperlink{class_state}{State} $\ast$ \hyperlink{class_light_a287da1d58d038e10899c38f8464cbc22}{get\+State} ()
+\begin{DoxyCompactList}\small\item\em Returns the \hyperlink{class_state}{State} of the \hyperlink{class_light}{Light}; must always be called with every light object created. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_aaa50f42697fdae36ec4b021098fac974}{set\+Name} (std\+::string name, std\+::string ip, std\+::string port)
+\begin{DoxyCompactList}\small\item\em sets the name of the light \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_light_a248c379885ea63ee7d71f7e19b0dab80}{get\+Name} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of the \hyperlink{class_light}{Light}. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_light_a7a41305231132e8bae6a899b703fd39a}{get\+ID} ()
+\begin{DoxyCompactList}\small\item\em Returns the ID of the \hyperlink{class_light}{Light}. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_ab22e6d81d0ccb2f844d404e2e038f9a2}{turn\+O\+Nor\+O\+FF} ()
+\begin{DoxyCompactList}\small\item\em Turns the light on or off. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_addc99af8c89bfd9c0ebd8908bd290ba7}{set\+Hue} (long long hue)
+\begin{DoxyCompactList}\small\item\em Sets the hue of the \hyperlink{class_light}{Light}. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_a95d42b02b50ea8f060be6efa0481ba3c}{set\+Brightness} (int brightness)
+\begin{DoxyCompactList}\small\item\em Sets the brightness of the \hyperlink{class_light}{Light}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_light_a3aede2c7bf6a2e7596e3b93735470b6d}\label{class_light_a3aede2c7bf6a2e7596e3b93735470b6d}} 
+std\+::string {\bfseries id}
+\item 
+\mbox{\Hypertarget{class_light_aed2e518d1e739c50c31ae77a865f51ed}\label{class_light_aed2e518d1e739c50c31ae77a865f51ed}} 
+std\+::string {\bfseries name}
+\item 
+\mbox{\Hypertarget{class_light_a6f17ea47d17e0536c67cd13e230953ad}\label{class_light_a6f17ea47d17e0536c67cd13e230953ad}} 
+\hyperlink{class_state}{State} $\ast$ {\bfseries state}
+\item 
+\mbox{\Hypertarget{class_light_a0cc3c685f7ee10e6c2925d8ba660ce61}\label{class_light_a0cc3c685f7ee10e6c2925d8ba660ce61}} 
+\hyperlink{class_home_page}{Home\+Page} $\ast$ {\bfseries page}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_light_a51f6d94b66ec884ce479ae481de8247b}\label{class_light_a51f6d94b66ec884ce479ae481de8247b}} 
+\index{Light@{Light}!Light@{Light}}
+\index{Light@{Light}!Light@{Light}}
+\subsubsection{\texorpdfstring{Light()}{Light()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Light\+::\+Light (\begin{DoxyParamCaption}\item[{std\+::string}]{id,  }\item[{std\+::string}]{name,  }\item[{\hyperlink{class_home_page}{Home\+Page} $\ast$}]{page }\end{DoxyParamCaption})}
+
+
+
+The light class which represents a Hue light with it\textquotesingle{}s associated state. 
+
+\begin{DoxyAuthor}{Author}
+Gurkiran Tatla 
+
+Jake Schindler 
+
+Justine Kim 
+
+Paul Salvatore 
+
+Timal Peramune \hyperlink{class_light_a51f6d94b66ec884ce479ae481de8247b}{Light\+::\+Light(std\+::string id, std\+::string name, Home\+Page $\ast$page)} Constructor; Initialization function to create a \hyperlink{class_light}{Light}
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & an ID number for the \hyperlink{class_light}{Light} \\
+\hline
+{\em name} & a name for the \hyperlink{class_light}{Light} \\
+\hline
+{\em \hyperlink{class_home_page}{Home\+Page}} & $\ast$page\+: link to homepage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_light_a190b96270bfc664d1e209a5055330f40}\label{class_light_a190b96270bfc664d1e209a5055330f40}} 
+\index{Light@{Light}!Light@{Light}}
+\index{Light@{Light}!Light@{Light}}
+\subsubsection{\texorpdfstring{Light()}{Light()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Light\+::\+Light (\begin{DoxyParamCaption}\item[{std\+::string}]{id,  }\item[{std\+::string}]{name,  }\item[{\hyperlink{class_state}{State} $\ast$}]{state,  }\item[{\hyperlink{class_home_page}{Home\+Page} $\ast$}]{page }\end{DoxyParamCaption})}
+
+
+
+Constructor; Initialization function to create a \hyperlink{class_light}{Light}. 
+
+Light\+::\+Light(std\+::string id, std\+::string name, Home\+Page $\ast$page, State $\ast$state) 
+\begin{DoxyParams}{Parameters}
+{\em id} & an ID number for the light \\
+\hline
+{\em name} & a name for the light \\
+\hline
+{\em page} & homepage \\
+\hline
+{\em \hyperlink{class_state}{State}} & light state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_light_ad0e59fad13bb6cfadc25b2c477e9ddc7}\label{class_light_ad0e59fad13bb6cfadc25b2c477e9ddc7}} 
+\index{Light@{Light}!````~Light@{$\sim$\+Light}}
+\index{````~Light@{$\sim$\+Light}!Light@{Light}}
+\subsubsection{\texorpdfstring{$\sim$\+Light()}{~Light()}}
+{\footnotesize\ttfamily Light\+::$\sim$\+Light (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructor. 
+
+\hyperlink{class_light_ad0e59fad13bb6cfadc25b2c477e9ddc7}{Light\+::$\sim$\+Light()} 
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_light_a7a41305231132e8bae6a899b703fd39a}\label{class_light_a7a41305231132e8bae6a899b703fd39a}} 
+\index{Light@{Light}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Light@{Light}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily std\+::string Light\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the ID of the \hyperlink{class_light}{Light}. 
+
+\hyperlink{class_light_a7a41305231132e8bae6a899b703fd39a}{Light\+::get\+I\+D()} 
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string\+: ID of the light 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_light_a248c379885ea63ee7d71f7e19b0dab80}\label{class_light_a248c379885ea63ee7d71f7e19b0dab80}} 
+\index{Light@{Light}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Light@{Light}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily std\+::string Light\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the name of the \hyperlink{class_light}{Light}. 
+
+\hyperlink{class_light_a248c379885ea63ee7d71f7e19b0dab80}{Light\+::get\+Name()} 
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string\+: name of the light 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_light_a287da1d58d038e10899c38f8464cbc22}\label{class_light_a287da1d58d038e10899c38f8464cbc22}} 
+\index{Light@{Light}!get\+State@{get\+State}}
+\index{get\+State@{get\+State}!Light@{Light}}
+\subsubsection{\texorpdfstring{get\+State()}{getState()}}
+{\footnotesize\ttfamily \hyperlink{class_state}{State} $\ast$ Light\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the \hyperlink{class_state}{State} of the \hyperlink{class_light}{Light}; must always be called with every light object created. 
+
+\hyperlink{class_light_a287da1d58d038e10899c38f8464cbc22}{Light\+::get\+State()} 
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_state}{State}\+: state of the light 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_light_a95d42b02b50ea8f060be6efa0481ba3c}\label{class_light_a95d42b02b50ea8f060be6efa0481ba3c}} 
+\index{Light@{Light}!set\+Brightness@{set\+Brightness}}
+\index{set\+Brightness@{set\+Brightness}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+Brightness()}{setBrightness()}}
+{\footnotesize\ttfamily void Light\+::set\+Brightness (\begin{DoxyParamCaption}\item[{int}]{brightness }\end{DoxyParamCaption})}
+
+
+
+Sets the brightness of the \hyperlink{class_light}{Light}. 
+
+\hyperlink{class_light_a95d42b02b50ea8f060be6efa0481ba3c}{Light\+::set\+Brightness(int brightness)} 
+\begin{DoxyParams}{Parameters}
+{\em brightness} & an int to represent the brightness of the light \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_light_addc99af8c89bfd9c0ebd8908bd290ba7}\label{class_light_addc99af8c89bfd9c0ebd8908bd290ba7}} 
+\index{Light@{Light}!set\+Hue@{set\+Hue}}
+\index{set\+Hue@{set\+Hue}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+Hue()}{setHue()}}
+{\footnotesize\ttfamily void Light\+::set\+Hue (\begin{DoxyParamCaption}\item[{long long}]{hue }\end{DoxyParamCaption})}
+
+
+
+Sets the hue of the \hyperlink{class_light}{Light}. 
+
+\hyperlink{class_light_addc99af8c89bfd9c0ebd8908bd290ba7}{Light\+::set\+Hue(long long hue)} 
+\begin{DoxyParams}{Parameters}
+{\em hue} & a long to represent the hue of the light \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_light_aaa50f42697fdae36ec4b021098fac974}\label{class_light_aaa50f42697fdae36ec4b021098fac974}} 
+\index{Light@{Light}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Light@{Light}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily void Light\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{ip,  }\item[{std\+::string}]{port }\end{DoxyParamCaption})}
+
+
+
+sets the name of the light 
+
+Light\+::set\+Name(std\+::string name) 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the light \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_light_ab22e6d81d0ccb2f844d404e2e038f9a2}\label{class_light_ab22e6d81d0ccb2f844d404e2e038f9a2}} 
+\index{Light@{Light}!turn\+O\+Nor\+O\+FF@{turn\+O\+Nor\+O\+FF}}
+\index{turn\+O\+Nor\+O\+FF@{turn\+O\+Nor\+O\+FF}!Light@{Light}}
+\subsubsection{\texorpdfstring{turn\+O\+Nor\+O\+F\+F()}{turnONorOFF()}}
+{\footnotesize\ttfamily void Light\+::turn\+O\+Nor\+O\+FF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Turns the light on or off. 
+
+\hyperlink{class_light_ab22e6d81d0ccb2f844d404e2e038f9a2}{Light\+::turn\+O\+Nor\+O\+F\+F()} 
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Light.\+hpp\item 
+Light.\+cpp\end{DoxyCompactItemize}

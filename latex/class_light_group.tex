@@ -1,0 +1,251 @@
+\hypertarget{class_light_group}{}\section{Light\+Group Class Reference}
+\label{class_light_group}\index{Light\+Group@{Light\+Group}}
+Inheritance diagram for Light\+Group\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_light_group}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_light_group_a640052573b06ee856b04158f83835210}{Light\+Group} (std\+::string id, std\+::string name, \hyperlink{class_home_page}{Home\+Page} $\ast$page, std\+::string ip, std\+::string port)
+\begin{DoxyCompactList}\small\item\em The lightgroup class which represents the groups of lights on the hue bridge. \end{DoxyCompactList}\item 
+void \hyperlink{class_light_group_a31d089214736e7c6d9896a4977a9e956}{set\+Name} (std\+::string name, std\+::string ip, std\+::string port)
+\item 
+void \hyperlink{class_light_group_a1586f3bce7da99ab50e6e35f9598effd}{add\+Light} (\hyperlink{class_light}{Light} $\ast$light)
+\begin{DoxyCompactList}\small\item\em add a light to the light group \end{DoxyCompactList}\item 
+void \hyperlink{class_light_group_a4c401d9a379641cfad1a5aa643a91e25}{remove\+Light} (\hyperlink{class_light}{Light} $\ast$light)
+\begin{DoxyCompactList}\small\item\em remove a light from the light group \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_light_group_a8bcdd2d8d6acfbdeac93c0708bddebf5}{get\+Name} ()
+\begin{DoxyCompactList}\small\item\em get the name of the lightgroup \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_light_group_af2a28bb84204d5cd64420ea213e86d8d}{get\+ID} ()
+\begin{DoxyCompactList}\small\item\em get the id of the lightgroup \end{DoxyCompactList}\item 
+std\+::string $\ast$ \hyperlink{class_light_group_a9e5a81ac9940935dbc87a3a33ebe7fc4}{get\+All\+Light\+Names} ()
+\begin{DoxyCompactList}\small\item\em gets the names of every light in the group \end{DoxyCompactList}\item 
+void \hyperlink{class_light_group_a9cf17fe345ba9ca946efdec08cd5dec4}{set\+Hue} (long long hue, std\+::string ip, std\+::string port)
+\begin{DoxyCompactList}\small\item\em sets the hue for each member of a group \end{DoxyCompactList}\item 
+void \hyperlink{class_light_group_a679f84c1478e032819f34977e16d531a}{set\+Brightness} (int bri, std\+::string ip, std\+::string port)
+\begin{DoxyCompactList}\small\item\em sets the brightness for each member of a group \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_light_group_a69129340632df0060208a0715e65fe81}{handle\+Group\+Lights} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em builds the group based on an api call to determine which lights are contained within it \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_light_group_ad07ddbd5a61f47f86b1d1606dba9135e}\label{class_light_group_ad07ddbd5a61f47f86b1d1606dba9135e}} 
+std\+::string {\bfseries id}
+\item 
+\mbox{\Hypertarget{class_light_group_ae5633812bb0a731a10528f92c52aff53}\label{class_light_group_ae5633812bb0a731a10528f92c52aff53}} 
+std\+::string {\bfseries name}
+\item 
+\mbox{\Hypertarget{class_light_group_aa8a851323032ba1a24ce4b4bfbb769ec}\label{class_light_group_aa8a851323032ba1a24ce4b4bfbb769ec}} 
+\hyperlink{class_home_page}{Home\+Page} $\ast$ {\bfseries page}
+\item 
+\mbox{\Hypertarget{class_light_group_a35d7236e075e2c34032828257fc4ae4d}\label{class_light_group_a35d7236e075e2c34032828257fc4ae4d}} 
+std\+::vector$<$ \hyperlink{class_light}{Light} $\ast$ $>$ {\bfseries lights}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_light_group_a640052573b06ee856b04158f83835210}\label{class_light_group_a640052573b06ee856b04158f83835210}} 
+\index{Light\+Group@{Light\+Group}!Light\+Group@{Light\+Group}}
+\index{Light\+Group@{Light\+Group}!Light\+Group@{Light\+Group}}
+\subsubsection{\texorpdfstring{Light\+Group()}{LightGroup()}}
+{\footnotesize\ttfamily Light\+Group\+::\+Light\+Group (\begin{DoxyParamCaption}\item[{std\+::string}]{id,  }\item[{std\+::string}]{name,  }\item[{\hyperlink{class_home_page}{Home\+Page} $\ast$}]{page,  }\item[{std\+::string}]{ip,  }\item[{std\+::string}]{port }\end{DoxyParamCaption})}
+
+
+
+The lightgroup class which represents the groups of lights on the hue bridge. 
+
+\begin{DoxyAuthor}{Author}
+Gurkiran Tatla 
+
+Jake Schindler 
+
+Justine Kim 
+
+Paul Salvatore 
+
+Timal Peramune \hyperlink{class_light_group}{Light\+Group} the constructor for the lightgroup class
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & a string representing the id of the light group \\
+\hline
+{\em name} & a string representing the name of the light group \\
+\hline
+{\em page} & a reference to the homepage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_light_group_a1586f3bce7da99ab50e6e35f9598effd}\label{class_light_group_a1586f3bce7da99ab50e6e35f9598effd}} 
+\index{Light\+Group@{Light\+Group}!add\+Light@{add\+Light}}
+\index{add\+Light@{add\+Light}!Light\+Group@{Light\+Group}}
+\subsubsection{\texorpdfstring{add\+Light()}{addLight()}}
+{\footnotesize\ttfamily void Light\+Group\+::add\+Light (\begin{DoxyParamCaption}\item[{\hyperlink{class_light}{Light} $\ast$}]{light }\end{DoxyParamCaption})}
+
+
+
+add a light to the light group 
+
+add\+Light 
+\begin{DoxyParams}{Parameters}
+{\em light} & the light object to be removed from the group \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_light_group_a9e5a81ac9940935dbc87a3a33ebe7fc4}\label{class_light_group_a9e5a81ac9940935dbc87a3a33ebe7fc4}} 
+\index{Light\+Group@{Light\+Group}!get\+All\+Light\+Names@{get\+All\+Light\+Names}}
+\index{get\+All\+Light\+Names@{get\+All\+Light\+Names}!Light\+Group@{Light\+Group}}
+\subsubsection{\texorpdfstring{get\+All\+Light\+Names()}{getAllLightNames()}}
+{\footnotesize\ttfamily std\+::string $\ast$ Light\+Group\+::get\+All\+Light\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the names of every light in the group 
+
+get\+All\+Light\+Names 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string representing every light in the group 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_light_group_af2a28bb84204d5cd64420ea213e86d8d}\label{class_light_group_af2a28bb84204d5cd64420ea213e86d8d}} 
+\index{Light\+Group@{Light\+Group}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Light\+Group@{Light\+Group}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily std\+::string Light\+Group\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the id of the lightgroup 
+
+get\+ID 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string representing the lightgroup id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_light_group_a8bcdd2d8d6acfbdeac93c0708bddebf5}\label{class_light_group_a8bcdd2d8d6acfbdeac93c0708bddebf5}} 
+\index{Light\+Group@{Light\+Group}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Light\+Group@{Light\+Group}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily std\+::string Light\+Group\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the name of the lightgroup 
+
+get\+Name 
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string representing the name of the lightgroup 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_light_group_a69129340632df0060208a0715e65fe81}\label{class_light_group_a69129340632df0060208a0715e65fe81}} 
+\index{Light\+Group@{Light\+Group}!handle\+Group\+Lights@{handle\+Group\+Lights}}
+\index{handle\+Group\+Lights@{handle\+Group\+Lights}!Light\+Group@{Light\+Group}}
+\subsubsection{\texorpdfstring{handle\+Group\+Lights()}{handleGroupLights()}}
+{\footnotesize\ttfamily void Light\+Group\+::handle\+Group\+Lights (\begin{DoxyParamCaption}\item[{boost\+::system\+::error\+\_\+code}]{err,  }\item[{const Wt\+::\+Http\+::\+Message \&}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+builds the group based on an api call to determine which lights are contained within it 
+
+handle\+Group\+Lights 
+\begin{DoxyParams}{Parameters}
+{\em err} & a boost error variable \\
+\hline
+{\em response} & a wt http response variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_light_group_a4c401d9a379641cfad1a5aa643a91e25}\label{class_light_group_a4c401d9a379641cfad1a5aa643a91e25}} 
+\index{Light\+Group@{Light\+Group}!remove\+Light@{remove\+Light}}
+\index{remove\+Light@{remove\+Light}!Light\+Group@{Light\+Group}}
+\subsubsection{\texorpdfstring{remove\+Light()}{removeLight()}}
+{\footnotesize\ttfamily void Light\+Group\+::remove\+Light (\begin{DoxyParamCaption}\item[{\hyperlink{class_light}{Light} $\ast$}]{light }\end{DoxyParamCaption})}
+
+
+
+remove a light from the light group 
+
+remove\+Light 
+\begin{DoxyParams}{Parameters}
+{\em light} & the light object to take out of the light group \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_light_group_a679f84c1478e032819f34977e16d531a}\label{class_light_group_a679f84c1478e032819f34977e16d531a}} 
+\index{Light\+Group@{Light\+Group}!set\+Brightness@{set\+Brightness}}
+\index{set\+Brightness@{set\+Brightness}!Light\+Group@{Light\+Group}}
+\subsubsection{\texorpdfstring{set\+Brightness()}{setBrightness()}}
+{\footnotesize\ttfamily void Light\+Group\+::set\+Brightness (\begin{DoxyParamCaption}\item[{int}]{bri,  }\item[{std\+::string}]{ip,  }\item[{std\+::string}]{port }\end{DoxyParamCaption})}
+
+
+
+sets the brightness for each member of a group 
+
+set\+Brightness 
+\begin{DoxyParams}{Parameters}
+{\em bri} & an integer representing the brightness \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_light_group_a9cf17fe345ba9ca946efdec08cd5dec4}\label{class_light_group_a9cf17fe345ba9ca946efdec08cd5dec4}} 
+\index{Light\+Group@{Light\+Group}!set\+Hue@{set\+Hue}}
+\index{set\+Hue@{set\+Hue}!Light\+Group@{Light\+Group}}
+\subsubsection{\texorpdfstring{set\+Hue()}{setHue()}}
+{\footnotesize\ttfamily void Light\+Group\+::set\+Hue (\begin{DoxyParamCaption}\item[{long long}]{hue,  }\item[{std\+::string}]{ip,  }\item[{std\+::string}]{port }\end{DoxyParamCaption})}
+
+
+
+sets the hue for each member of a group 
+
+set\+Hue 
+\begin{DoxyParams}{Parameters}
+{\em hue} & a long int representing the hue \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_light_group_a31d089214736e7c6d9896a4977a9e956}\label{class_light_group_a31d089214736e7c6d9896a4977a9e956}} 
+\index{Light\+Group@{Light\+Group}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Light\+Group@{Light\+Group}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily void Light\+Group\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{ip,  }\item[{std\+::string}]{port }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Light\+Group.\+hpp\item 
+Light\+Group.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,228 @@
+\hypertarget{class_predict}{}\section{Predict Class Reference}
+\label{class_predict}\index{Predict@{Predict}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_predict_af917672f59888068ae9d3f0a211e0672}{Predict} ()
+\begin{DoxyCompactList}\small\item\em The \hyperlink{class_predict}{Predict} class is used to train a logistic regression algorithm using a specific lights state data to predict future scheduling state events. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_predict_a735a7ad53f62ecbe74d25ba56aa893fe}{$\sim$\+Predict} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static arma\+::mat \hyperlink{class_predict_a21136d6e19dd267fbbd2b1ba672ad043}{train\+And\+Predict} (int light\+Id, int machine\+Learning)
+\item 
+static int \hyperlink{class_predict_a7b1ff9116156ce5bf0fb3b366833e2da}{check\+Confidence} (int light\+Id)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static arma\+::mat \hyperlink{class_predict_a8c922a17b4f5b2f17e92cc6c4e5b0e44}{map\+Feature} (arma\+::mat X1, arma\+::mat X2)
+\item 
+static arma\+::mat \hyperlink{class_predict_ab9e33519596b14f8147259cbe2c180b3}{sigmoid} (arma\+::mat $\ast$theta, arma\+::mat $\ast$X, unsigned long m)
+\item 
+static arma\+::mat \hyperlink{class_predict_ac446da0fee7e72bb7ae5f0f9bb427eb3}{predict} (arma\+::mat $\ast$theta, arma\+::mat $\ast$X)
+\item 
+static arma\+::mat \hyperlink{class_predict_a386491f9b107d209007f6930589476f3}{normal\+Equation} (arma\+::mat $\ast$X, arma\+::mat $\ast$y)
+\item 
+static arma\+::mat \hyperlink{class_predict_a9abe08bc86d298515354df348bfb3296}{generate\+Light\+Matrix} (int light\+Id)
+\item 
+static arma\+::mat \hyperlink{class_predict_a4841c8dca153dbc59ecaccec41686109}{generate\+Week\+OfX} ()
+\item 
+\mbox{\Hypertarget{class_predict_a4967ed58a732e771ed1945338e97ed3f}\label{class_predict_a4967ed58a732e771ed1945338e97ed3f}} 
+static arma\+::mat {\bfseries predict\+By\+Frequency} (arma\+::mat $\ast$data)
+\item 
+static double \hyperlink{class_predict_a5b43a54e1dea7d5198d8f551670fdc65}{fscore} (arma\+::mat $\ast$y\+\_\+predicted, arma\+::mat $\ast$y\+\_\+test)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_predict_af917672f59888068ae9d3f0a211e0672}\label{class_predict_af917672f59888068ae9d3f0a211e0672}} 
+\index{Predict@{Predict}!Predict@{Predict}}
+\index{Predict@{Predict}!Predict@{Predict}}
+\subsubsection{\texorpdfstring{Predict()}{Predict()}}
+{\footnotesize\ttfamily Predict\+::\+Predict (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The \hyperlink{class_predict}{Predict} class is used to train a logistic regression algorithm using a specific lights state data to predict future scheduling state events. 
+
+If the algorithm does not perform at a high enough level of certainty, than the \hyperlink{class_predict}{Predict} class will opt to use a most-\/frequent algorithm to decide scheduling. \begin{DoxyAuthor}{Author}
+Gurkiran Tatla 
+
+Jake Schindler 
+
+Justine Kim 
+
+Paul Salvatore 
+
+Timal Peramune \hyperlink{class_predict}{Predict} constructor. There are no parameters/variables to initalize for this class so the constructor does nothing. 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_predict_a735a7ad53f62ecbe74d25ba56aa893fe}\label{class_predict_a735a7ad53f62ecbe74d25ba56aa893fe}} 
+\index{Predict@{Predict}!````~Predict@{$\sim$\+Predict}}
+\index{````~Predict@{$\sim$\+Predict}!Predict@{Predict}}
+\subsubsection{\texorpdfstring{$\sim$\+Predict()}{~Predict()}}
+{\footnotesize\ttfamily Predict\+::$\sim$\+Predict (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\hyperlink{class_predict}{Predict} deconstructor. There are no class variables to destroy for this class so the deconstructor does nothing. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_predict_a7b1ff9116156ce5bf0fb3b366833e2da}\label{class_predict_a7b1ff9116156ce5bf0fb3b366833e2da}} 
+\index{Predict@{Predict}!check\+Confidence@{check\+Confidence}}
+\index{check\+Confidence@{check\+Confidence}!Predict@{Predict}}
+\subsubsection{\texorpdfstring{check\+Confidence()}{checkConfidence()}}
+{\footnotesize\ttfamily int Predict\+::check\+Confidence (\begin{DoxyParamCaption}\item[{int}]{light\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Splits a lights data into a training and test set to compute the accuracy of our training algorithm with the available data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & id of the light that we are checking the confidence for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an integer 1 or 0, respectively representing if our f score surpasses our confidence threshold 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_predict_a5b43a54e1dea7d5198d8f551670fdc65}\label{class_predict_a5b43a54e1dea7d5198d8f551670fdc65}} 
+\index{Predict@{Predict}!fscore@{fscore}}
+\index{fscore@{fscore}!Predict@{Predict}}
+\subsubsection{\texorpdfstring{fscore()}{fscore()}}
+{\footnotesize\ttfamily double Predict\+::fscore (\begin{DoxyParamCaption}\item[{arma\+::mat $\ast$}]{y\+\_\+predicted,  }\item[{arma\+::mat $\ast$}]{y\+\_\+test }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Computes the F score for the test data to determine accuracy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & id of the light that we are checking the confidence for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an integer 1 or 0, respectively representing if our f score surpasses our confidence threshold 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_predict_a9abe08bc86d298515354df348bfb3296}\label{class_predict_a9abe08bc86d298515354df348bfb3296}} 
+\index{Predict@{Predict}!generate\+Light\+Matrix@{generate\+Light\+Matrix}}
+\index{generate\+Light\+Matrix@{generate\+Light\+Matrix}!Predict@{Predict}}
+\subsubsection{\texorpdfstring{generate\+Light\+Matrix()}{generateLightMatrix()}}
+{\footnotesize\ttfamily arma\+::mat Predict\+::generate\+Light\+Matrix (\begin{DoxyParamCaption}\item[{int}]{light\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Builds and returns a matrix representing the state information for a particular light.
+
+
+\begin{DoxyParams}{Parameters}
+{\em light\+Id} & the id of the light for which we are getting all state information for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an matrix representation where the rows represent each data point, col1\+: day, col2\+: hour, col3\+: state (1 = on, 0 = off) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_predict_a4841c8dca153dbc59ecaccec41686109}\label{class_predict_a4841c8dca153dbc59ecaccec41686109}} 
+\index{Predict@{Predict}!generate\+Week\+OfX@{generate\+Week\+OfX}}
+\index{generate\+Week\+OfX@{generate\+Week\+OfX}!Predict@{Predict}}
+\subsubsection{\texorpdfstring{generate\+Week\+Of\+X()}{generateWeekOfX()}}
+{\footnotesize\ttfamily arma\+::mat Predict\+::generate\+Week\+OfX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Builds a matrix of x parameters to be used for predicting the next week of state shceduling.
+
+\begin{DoxyReturn}{Returns}
+a matrix representing a week of x values for oru scheduling prediction algorithm 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_predict_a8c922a17b4f5b2f17e92cc6c4e5b0e44}\label{class_predict_a8c922a17b4f5b2f17e92cc6c4e5b0e44}} 
+\index{Predict@{Predict}!map\+Feature@{map\+Feature}}
+\index{map\+Feature@{map\+Feature}!Predict@{Predict}}
+\subsubsection{\texorpdfstring{map\+Feature()}{mapFeature()}}
+{\footnotesize\ttfamily arma\+::mat Predict\+::map\+Feature (\begin{DoxyParamCaption}\item[{arma\+::mat}]{X1,  }\item[{arma\+::mat}]{X2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Maps the features X1 and X2 polynomially for more complex fitting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em X1} & m x 1 vector where m is number of training examples (first feature column) \\
+\hline
+{\em X2} & m x 1 vector where m is number of training examples (second feature column) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector of size m x 21 representing polynomial mapped features X1 and X2 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_predict_a386491f9b107d209007f6930589476f3}\label{class_predict_a386491f9b107d209007f6930589476f3}} 
+\index{Predict@{Predict}!normal\+Equation@{normal\+Equation}}
+\index{normal\+Equation@{normal\+Equation}!Predict@{Predict}}
+\subsubsection{\texorpdfstring{normal\+Equation()}{normalEquation()}}
+{\footnotesize\ttfamily arma\+::mat Predict\+::normal\+Equation (\begin{DoxyParamCaption}\item[{arma\+::mat $\ast$}]{X,  }\item[{arma\+::mat $\ast$}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Computes the theta values for the matrix using the normal equation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & m x (n+1) matrix, where m is number of training examples and n is the number of features \\
+\hline
+{\em y} & m x 1 vector \\
+\hline
+{\em lambda} & the regularization parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the minimized values of theta\+: (n+1) x 1 vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_predict_ac446da0fee7e72bb7ae5f0f9bb427eb3}\label{class_predict_ac446da0fee7e72bb7ae5f0f9bb427eb3}} 
+\index{Predict@{Predict}!predict@{predict}}
+\index{predict@{predict}!Predict@{Predict}}
+\subsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily arma\+::mat Predict\+::predict (\begin{DoxyParamCaption}\item[{arma\+::mat $\ast$}]{theta,  }\item[{arma\+::mat $\ast$}]{X }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Makes a prediction based on the sigmoid values for a weeks worth of x points.
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & (n + 1) x 1 vector \\
+\hline
+{\em X} & m x (n+1) vector where m is number of predictions to make and n is the number of features \\
+\hline
+{\em threshold} & is a double representing the threshold from which to consider the output positive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the prediction for each of the values in X parameterized with theta\+: m x 1 vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_predict_ab9e33519596b14f8147259cbe2c180b3}\label{class_predict_ab9e33519596b14f8147259cbe2c180b3}} 
+\index{Predict@{Predict}!sigmoid@{sigmoid}}
+\index{sigmoid@{sigmoid}!Predict@{Predict}}
+\subsubsection{\texorpdfstring{sigmoid()}{sigmoid()}}
+{\footnotesize\ttfamily arma\+::mat Predict\+::sigmoid (\begin{DoxyParamCaption}\item[{arma\+::mat $\ast$}]{theta,  }\item[{arma\+::mat $\ast$}]{X,  }\item[{unsigned long}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Computes the sigmoid value of each training example in X parameterized with theta
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & (n + 1) x 1 vector \\
+\hline
+{\em X} & m x (n+1) vector where m is number of training examples and n is the number of features \\
+\hline
+{\em m} & equivallent to the number of training examples in X \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector of size m x 1 representing the sigmoid function applied to each value of z 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_predict_a21136d6e19dd267fbbd2b1ba672ad043}\label{class_predict_a21136d6e19dd267fbbd2b1ba672ad043}} 
+\index{Predict@{Predict}!train\+And\+Predict@{train\+And\+Predict}}
+\index{train\+And\+Predict@{train\+And\+Predict}!Predict@{Predict}}
+\subsubsection{\texorpdfstring{train\+And\+Predict()}{trainAndPredict()}}
+{\footnotesize\ttfamily arma\+::mat Predict\+::train\+And\+Predict (\begin{DoxyParamCaption}\item[{int}]{light\+Id,  }\item[{int}]{machine\+Learning }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Decides which prediction algorithm to use and exeutes the prediction.
+
+
+\begin{DoxyParams}{Parameters}
+{\em light\+Id} & the id of a light to collect all data for, train theta, and predict a weeks worth of scheduling \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a matrix representing a week of scheduling 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Predict.\+hpp\item 
+Predict.\+cpp\end{DoxyCompactItemize}
