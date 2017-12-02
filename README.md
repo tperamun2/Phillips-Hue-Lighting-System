@@ -4,7 +4,7 @@ This is hUe.
 A hue dashboard that uses logistic regression to predict when to turn on/off your lights for better home automation.
 
 Completed by:
-Timal Peramune
+Timal Peramune, Justine Kim, Jake Schindler, Paul Salvatore , Gurkiran Kaur Tatla 
 
 
 
